@@ -1,6 +1,6 @@
 {
   "meta": {
-    "title": "SmartX - El Dispositivo Inteligente de Nueva Generación"
+    "title": "PocketCompute - El Dispositivo Inteligente de Próxima Generación"
   },
   "navbar": {
     "features": "Características",
@@ -11,18 +11,18 @@
   },
   "hero": {
     "title": "El Futuro de los Dispositivos Inteligentes",
-    "subtitle": "Presentamos SmartX, el dispositivo revolucionario que combina funcionalidad de smartphone con expansión de hardware personalizable.",
-    "kickstarterButton": "Apóyanos en Kickstarter",
-    "learnMoreButton": "Más Información",
-    "deviceImageAlt": "Dispositivo SmartX",
-    "discount": "Reserva ahora y ahorra 30%"
+    "subtitle": "Presentamos PocketCompute, el dispositivo revolucionario que combina la funcionalidad de un smartphone con expansión de hardware personalizable.",
+    "kickstarterButton": "Apoyar en Kickstarter",
+    "learnMoreButton": "Saber más",
+    "deviceImageAlt": "Dispositivo PocketCompute",
+    "discount": "Reserva ahora y ahorra un 30%"
   },
   "features": {
     "title": "Características Avanzadas",
-    "subtitle": "Descubre qué hace que SmartX se destaque de los smartphones y dispositivos inteligentes convencionales.",
+    "subtitle": "Descubre qué hace que PocketCompute destaque entre los smartphones y dispositivos inteligentes convencionales.",
     "display": {
       "title": "Pantalla de Alta Resolución",
-      "description": "Vibrante pantalla AMOLED de 6.5 pulgadas con tasa de refresco de 120Hz para un desplazamiento suave y visuales impresionantes."
+      "description": "Vibrante pantalla AMOLED de 6,5 pulgadas con tasa de refresco de 120Hz para un desplazamiento suave y visuales impresionantes."
     },
     "processor": {
       "title": "Procesador Avanzado",
@@ -30,32 +30,32 @@
     },
     "camera": {
       "title": "Sistema de Cámara Pro",
-      "description": "Sistema de triple cámara con sensor principal de 48MP, lentes ultra gran angular y telefoto para fotografía de nivel profesional."
+      "description": "Configuración de triple cámara con sensor principal de 48MP, lentes ultra gran angular y teleobjetivo para fotografía de nivel profesional."
     },
     "ports": {
-      "title": "Sistema de Puertos Expandido",
-      "description": "Múltiples opciones de conexión incluyendo USB-C, micro-HDMI y nuestro puerto de expansión propietario para máxima versatilidad."
+      "title": "Sistema de Puertos Ampliado",
+      "description": "Múltiples opciones de conexión, incluyendo USB-C, micro-HDMI y nuestro puerto de expansión propietario para máxima versatilidad."
     },
     "charging": {
       "title": "Carga Rápida",
-      "description": "Tecnología de carga turbo de 65W te lleva de 0 a 60% en solo 15 minutos con batería para todo el día."
+      "description": "La tecnología de carga turbo de 65W te lleva de 0 a 60% en solo 15 minutos con batería para todo el día."
     },
     "security": {
       "title": "Seguridad Mejorada",
-      "description": "Seguridad biométrica avanzada con sensor de huellas dactilares bajo pantalla y tecnología de reconocimiento facial."
+      "description": "Seguridad biométrica avanzada con sensor de huellas dactilares bajo la pantalla y tecnología de reconocimiento facial."
     }
   },
   "functions": {
     "title": "Funciones Principales",
-    "subtitle": "Descubre las tres funciones revolucionarias que hacen de SmartX el dispositivo más versátil del mercado.",
-    "preorderButton": "Reserva Ahora",
+    "subtitle": "Descubre las tres funciones revolucionarias que hacen de PocketCompute el dispositivo más versátil del mercado.",
+    "preorderButton": "Reservar Ahora",
     "general": {
-      "title": "Uso General con Puertos Adicionales",
-      "description": "Usa SmartX como tu smartphone diario, mejorado con opciones de conectividad adicionales que los dispositivos estándar no tienen.",
+      "title": "Uso General de Teléfono con Puertos Adicionales",
+      "description": "Usa PocketCompute como tu smartphone diario, mejorado con opciones de conectividad adicionales que los dispositivos estándar no tienen.",
       "features": {
         "usb": "USB-C estándar de la industria",
-        "hdmi": "Salida Micro-HDMI",
-        "audio": "Conector de audio de 3.5mm"
+        "hdmi": "Salida micro-HDMI",
+        "audio": "Conector de audio de 3,5mm"
       }
     },
     "payment": {
@@ -69,7 +69,7 @@
     },
     "expansion": {
       "title": "Expansión de Microcontroladores",
-      "description": "Conecta microcontroladores y electrónica adicional a través de nuestro puerto de expansión propietario para personalización ilimitada.",
+      "description": "Conecta microcontroladores y electrónica adicional a través de nuestro puerto de expansión propietario para una personalización ilimitada.",
       "features": {
         "usb": "Puerto de expansión USB",
         "modules": "Soporte para módulos de hardware",
@@ -78,16 +78,16 @@
     }
   },
   "videoShowcase": {
-    "title": "Ve SmartX en Acción",
-    "subtitle": "Mira cómo SmartX transforma la forma en que interactúas con la tecnología.",
+    "title": "Mira PocketCompute en Acción",
+    "subtitle": "Observa cómo PocketCompute transforma la manera en que interactúas con la tecnología.",
     "playButton": "Reproducir video",
-    "scrollInstruction": "Desplázate hacia abajo para ver cómo SmartX se adapta a tus necesidades"
+    "scrollInstruction": "Desplázate hacia abajo para ver cómo PocketCompute se adapta a tus necesidades"
   },
   "instagram": {
     "title": "Desde Nuestro Instagram",
-    "subtitle": "Síguenos en @SmartXOfficial para las últimas actualizaciones y contenido detrás de escena.",
+    "subtitle": "Síguenos en @PocketComputeOfficial para las últimas actualizaciones y contenido detrás de escenas.",
     "followButton": "Síguenos en Instagram",
-    "error": "No se pudo cargar el feed de Instagram. Por favor, vuelve más tarde."
+    "error": "No se pudo cargar el feed de Instagram. Por favor, vuelve a intentarlo más tarde."
   },
   "newsletter": {
     "title": "Mantente Actualizado",
@@ -97,92 +97,92 @@
       "message": "¡Gracias por suscribirte a nuestro boletín!"
     },
     "error": {
-      "title": "Error de Suscripción",
-      "message": "Error al suscribirse. Por favor, intenta de nuevo más tarde."
+      "title": "Error en la Suscripción",
+      "message": "Error al suscribirse. Por favor, inténtalo de nuevo más tarde."
     },
     "validation": {
-      "nameRequired": "Por favor, ingresa tu nombre",
-      "emailInvalid": "Por favor, ingresa un correo electrónico válido",
+      "nameRequired": "Por favor, introduce tu nombre",
+      "emailInvalid": "Por favor, introduce una dirección de correo electrónico válida",
       "privacyRequired": "Debes aceptar recibir actualizaciones"
     },
     "form": {
       "name": "Nombre",
-      "namePlaceholder": "Ingresa tu nombre",
-      "email": "Correo Electrónico",
-      "emailPlaceholder": "Ingresa tu correo electrónico",
-      "privacyLabel": "Acepto recibir actualizaciones de SmartX",
+      "namePlaceholder": "Introduce tu nombre",
+      "email": "Correo electrónico",
+      "emailPlaceholder": "Introduce tu correo electrónico",
+      "privacyLabel": "Acepto recibir actualizaciones de PocketCompute",
       "privacyText": "Respetamos tu privacidad y nunca compartiremos tu información.",
-      "submit": "Suscríbete Ahora",
-      "submitting": "Suscribiendo..."
+      "submit": "Suscribirse Ahora",
+      "submitting": "Suscribiéndose..."
     }
   },
   "about": {
-    "title": "Acerca de SmartX",
+    "title": "Acerca de PocketCompute",
     "subtitle": "Conoce más sobre nuestra misión de revolucionar la tecnología personal.",
-    "imageAlt": "Equipo SmartX",
-    "foundedText": "Fundada en 2023, SmartX está redefiniendo lo que un smartphone puede ser.",
+    "imageAlt": "Equipo PocketCompute",
+    "foundedText": "Fundada en 2023, PocketCompute está redefiniendo lo que puede ser un smartphone.",
     "story": {
       "title": "Nuestra Historia",
-      "content": "SmartX nació de una simple pregunta: ¿Por qué nuestros smartphones no pueden hacer más? Nuestro equipo de ingenieros y diseñadores se propuso crear un dispositivo que rompa las limitaciones de los smartphones convencionales, ofreciendo personalización y expansibilidad sin precedentes."
+      "content": "PocketCompute nació de una simple pregunta: ¿Por qué nuestros smartphones no pueden hacer más? Nuestro equipo de ingenieros y diseñadores se propuso crear un dispositivo que rompa las limitaciones de los smartphones convencionales, ofreciendo personalización y expansibilidad sin precedentes."
     },
     "mission": {
       "title": "Nuestra Misión",
-      "content": "Estamos en una misión para empoderar a los usuarios con tecnología que se adapte a sus necesidades únicas, en lugar de obligarlos a adaptarse a la tecnología. SmartX está diseñado para evolucionar contigo, ofreciendo posibilidades infinitas de personalización y expansión."
+      "content": "Nuestra misión es capacitar a los usuarios con tecnología que se adapte a sus necesidades únicas, en lugar de forzarlos a adaptarse a la tecnología. PocketCompute está diseñado para evolucionar contigo, ofreciendo posibilidades infinitas de personalización y expansión."
     },
     "team": {
       "title": "Nuestro Equipo",
-      "content": "Nuestro diverso equipo reúne experiencia en electrónica de consumo, desarrollo de software e ingeniería de hardware. Unidos por una pasión por la innovación, estamos comprometidos a ampliar los límites de lo posible en tecnología personal."
+      "content": "Nuestro diverso equipo reúne experiencia en electrónica de consumo, desarrollo de software e ingeniería de hardware. Unidos por una pasión por la innovación, estamos comprometidos a empujar los límites de lo posible en tecnología personal."
     }
   },
   "faq": {
     "title": "Preguntas Frecuentes",
-    "subtitle": "Encuentra respuestas a preguntas comunes sobre SmartX.",
+    "subtitle": "Encuentra respuestas a preguntas comunes sobre PocketCompute.",
     "availability": {
-      "question": "¿Cuándo estará disponible SmartX?",
-      "answer": "SmartX estará disponible para reservar a través de nuestra campaña de Kickstarter a partir del tercer trimestre de 2023. Se espera que los primeros dispositivos se envíen a los patrocinadores en el primer trimestre de 2024, con disponibilidad general planificada para el segundo trimestre de 2024."
+      "question": "¿Cuándo estará disponible PocketCompute?",
+      "answer": "PocketCompute estará disponible para reserva a través de nuestra campaña de Kickstarter a partir del tercer trimestre de 2023. Se espera que los primeros dispositivos se envíen a los colaboradores en el primer trimestre de 2024, con disponibilidad general prevista para el segundo trimestre de 2024."
     },
     "os": {
-      "question": "¿Qué sistema operativo ejecuta SmartX?",
-      "answer": "SmartX funciona con SmartOS, nuestro sistema operativo personalizado basado en el Proyecto de Código Abierto de Android (AOSP) con modificaciones para soportar nuestras capacidades de hardware únicas. Es totalmente compatible con aplicaciones Android mientras ofrece APIs adicionales para módulos de expansión de hardware."
+      "question": "¿Qué sistema operativo ejecuta PocketCompute?",
+      "answer": "PocketCompute funciona con PocketOS, nuestro sistema operativo personalizado basado en Android Open Source Project (AOSP) con modificaciones para admitir nuestras capacidades de hardware únicas. Es totalmente compatible con las aplicaciones de Android y ofrece API adicionales para módulos de expansión de hardware."
     },
     "expansion": {
       "question": "¿Cómo funciona la expansión de microcontroladores?",
-      "answer": "SmartX cuenta con un puerto de expansión propietario en la parte posterior del dispositivo que se conecta a nuestros módulos de expansión a través de USB. Cada módulo puede contener varios microcontroladores y componentes que extienden la funcionalidad de tu dispositivo. Proporcionamos un SDK completo para que los desarrolladores creen sus propios módulos e integraciones de software."
+      "answer": "PocketCompute cuenta con un puerto de expansión propietario en la parte posterior del dispositivo que se conecta a nuestros módulos de expansión a través de USB. Cada módulo puede contener varios microcontroladores y componentes que amplían la funcionalidad de tu dispositivo. Proporcionamos un SDK completo para que los desarrolladores creen sus propios módulos e integraciones de software."
     },
     "payment": {
       "question": "¿Qué procesadores de pago son compatibles con Tap and Pay?",
-      "answer": "La función Tap and Pay de SmartX es compatible con los principales procesadores de pago, incluyendo Stripe, Square, PayPal y Adyen. Proporcionamos una API para desarrolladores que permite la integración con servicios de pago adicionales. Nuestro software POS incorporado es compatible con tarjetas de crédito/débito estándar, pagos NFC y soluciones populares de pago móvil."
+      "answer": "La función Tap and Pay de PocketCompute es compatible con los principales procesadores de pago, incluidos Stripe, Square, PayPal y Adyen. Proporcionamos una API de desarrollador que permite la integración con servicios de pago adicionales. Nuestro software POS incorporado admite tarjetas de crédito/débito estándar, pagos NFC y soluciones de pago móvil populares."
     },
     "specs": {
-      "question": "¿Cuáles son las especificaciones de SmartX?",
-      "answer": "SmartX cuenta con especificaciones de alta gama para garantizar un rendimiento fluido en todos los casos de uso:",
+      "question": "¿Cuáles son las especificaciones de PocketCompute?",
+      "answer": "PocketCompute cuenta con especificaciones de gama alta para garantizar un rendimiento fluido para todos los casos de uso:",
       "list": {
-        "display": "Pantalla AMOLED de 6.5 pulgadas (2400 x 1080, 120Hz)",
+        "display": "Pantalla AMOLED de 6,5 pulgadas (2400 x 1080, 120Hz)",
         "processor": "Procesador octa-core con conectividad 5G",
-        "ram": "Opciones de 8GB/12GB de RAM",
+        "ram": "Opciones de RAM de 8GB/12GB",
         "storage": "Opciones de almacenamiento de 128GB/256GB/512GB",
-        "battery": "Batería de 4,500mAh con carga rápida de 65W",
-        "camera": "Sistema de triple cámara (48MP principal + 12MP ultra gran angular + 8MP telefoto)",
+        "battery": "Batería de 4.500mAh con carga rápida de 65W",
+        "camera": "Sistema de triple cámara (48MP principal + 12MP ultra gran angular + 8MP teleobjetivo)",
         "ports": "Puerto de expansión propietario + USB-C + micro-HDMI"
       }
     }
   },
   "kickstarter": {
     "title": "Apoya Nuestro Kickstarter",
-    "subtitle": "Sé de los primeros en experimentar SmartX y ayuda a dar vida a este revolucionario dispositivo. Apoya nuestra campaña de Kickstarter y obtén precios exclusivos de preventa.",
-    "discount": "Descuento de Preventa",
-    "price": "Precio Super Anticipado",
-    "shipping": "Hasta que Comience el Envío",
+    "subtitle": "Sé de los primeros en experimentar PocketCompute y ayuda a dar vida a este dispositivo revolucionario. Respalda nuestra campaña de Kickstarter y obtén precios exclusivos de early-bird.",
+    "discount": "Descuento Early Bird",
+    "price": "Precio Super Early Bird",
+    "shipping": "Hasta Que Comience el Envío",
     "button": "Apóyanos en Kickstarter"
   },
   "footer": {
-    "tagline": "Redefiniendo lo que puede ser un dispositivo inteligente.",
-    "copyright": "© 2023 SmartX. Todos los derechos reservados.",
+    "tagline": "Redefiniendo lo que un dispositivo inteligente puede ser.",
+    "copyright": "© 2023 PocketCompute. Todos los derechos reservados.",
     "quickLinks": {
       "title": "Enlaces Rápidos",
       "features": "Características",
-      "functions": "Funciones Principales",
-      "about": "Sobre Nosotros",
+      "functions": "Funciones Clave",
+      "about": "Acerca de",
       "faq": "Preguntas Frecuentes",
       "kickstarter": "Kickstarter"
     },

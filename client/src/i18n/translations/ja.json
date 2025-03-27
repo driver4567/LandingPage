@@ -1,0 +1,203 @@
+{
+  "meta": {
+    "title": "PocketCompute - 次世代スマートデバイス"
+  },
+  "navbar": {
+    "features": "機能",
+    "keyFunctions": "主要機能",
+    "about": "会社概要",
+    "faq": "よくある質問",
+    "language": "言語"
+  },
+  "hero": {
+    "title": "スマートデバイスの未来",
+    "subtitle": "PocketComputeの紹介。スマートフォンの機能とカスタマイズ可能なハードウェア拡張を組み合わせた革新的なデバイスです。",
+    "kickstarterButton": "Kickstarterでサポート",
+    "learnMoreButton": "詳細を見る",
+    "deviceImageAlt": "PocketComputeデバイス",
+    "discount": "今すぐ予約注文して30%割引"
+  },
+  "features": {
+    "title": "高度な機能",
+    "subtitle": "PocketComputeが従来のスマートフォンやスマートデバイスと一線を画す理由をご覧ください。",
+    "display": {
+      "title": "高解像度ディスプレイ",
+      "description": "120Hzリフレッシュレートの鮮やかな6.5インチAMOLEDディスプレイで、滑らかなスクロールと見事な視覚効果を実現します。"
+    },
+    "processor": {
+      "title": "先進的なプロセッサ",
+      "description": "専用AI機能を備えた最新世代のオクタコアプロセッサで、超高速パフォーマンスを実現します。"
+    },
+    "camera": {
+      "title": "プロ仕様カメラシステム",
+      "description": "48MPメインセンサー、超広角レンズ、望遠レンズを備えたトリプルカメラセットアップで、プロ品質の写真撮影が可能です。"
+    },
+    "ports": {
+      "title": "拡張ポートシステム",
+      "description": "USB-C、マイクロHDMI、独自の拡張ポートなど、複数の接続オプションを提供し、究極の多用途性を実現します。"
+    },
+    "charging": {
+      "title": "急速充電",
+      "description": "65Wターボ充電技術により、わずか15分で0から60%まで充電でき、終日バッテリー持続が可能です。"
+    },
+    "security": {
+      "title": "強化されたセキュリティ",
+      "description": "ディスプレイ内蔵指紋センサーと顔認識技術による先進的な生体認証セキュリティを提供します。"
+    }
+  },
+  "functions": {
+    "title": "主要機能",
+    "subtitle": "PocketComputeを市場で最も多機能なデバイスにする3つの革新的機能をご覧ください。",
+    "preorderButton": "今すぐ予約注文",
+    "general": {
+      "title": "追加ポートを備えた一般的な電話使用",
+      "description": "PocketComputeを日常のスマートフォンとして使用し、標準デバイスにはない追加の接続オプションで機能を強化します。",
+      "features": {
+        "usb": "業界標準USB-C",
+        "hdmi": "マイクロHDMI出力",
+        "audio": "3.5mmオーディオジャック"
+      }
+    },
+    "payment": {
+      "title": "タップ＆ペイ処理",
+      "description": "高度なNFC機能と安全なトランザクション処理により、どこでも非接触決済を処理できます。",
+      "features": {
+        "nfc": "強化されたNFC機能",
+        "secure": "安全な支払い処理",
+        "pos": "内蔵POSソフトウェア"
+      }
+    },
+    "expansion": {
+      "title": "マイクロコントローラー拡張",
+      "description": "独自の拡張ポートを通じて追加のマイクロコントローラーや電子機器を接続し、無制限のカスタマイズを実現します。",
+      "features": {
+        "usb": "USB拡張ポート",
+        "modules": "ハードウェアモジュールサポート",
+        "sdk": "オープンソースSDK"
+      }
+    }
+  },
+  "videoShowcase": {
+    "title": "PocketComputeの実際の動作を見る",
+    "subtitle": "PocketComputeがテクノロジーとの関わり方をどのように変えるかをご覧ください。",
+    "playButton": "動画を再生",
+    "scrollInstruction": "スクロールダウンしてPocketComputeがあなたのニーズにどう適応するかをご覧ください"
+  },
+  "instagram": {
+    "title": "Instagramから",
+    "subtitle": "最新情報や舞台裏のコンテンツは@PocketComputeOfficialをフォローしてください。",
+    "followButton": "Instagramでフォローする",
+    "error": "Instagramフィードを読み込めません。後でもう一度確認してください。"
+  },
+  "newsletter": {
+    "title": "最新情報を入手",
+    "subtitle": "独占的な更新情報、先行アクセスの機会、特別オファーについてはニュースレターにご登録ください。",
+    "success": {
+      "title": "登録成功",
+      "message": "ニュースレターにご登録いただきありがとうございます！"
+    },
+    "error": {
+      "title": "登録失敗",
+      "message": "登録に失敗しました。後でもう一度お試しください。"
+    },
+    "validation": {
+      "nameRequired": "お名前を入力してください",
+      "emailInvalid": "有効なメールアドレスを入力してください",
+      "privacyRequired": "更新情報の受信に同意する必要があります"
+    },
+    "form": {
+      "name": "名前",
+      "namePlaceholder": "お名前を入力",
+      "email": "メール",
+      "emailPlaceholder": "メールアドレスを入力",
+      "privacyLabel": "PocketComputeからの更新情報の受信に同意します",
+      "privacyText": "私たちはあなたのプライバシーを尊重し、情報を共有することはありません。",
+      "submit": "今すぐ登録",
+      "submitting": "登録中..."
+    }
+  },
+  "about": {
+    "title": "PocketComputeについて",
+    "subtitle": "個人向けテクノロジーを革新するという私たちの使命についてもっと知る。",
+    "imageAlt": "PocketComputeチーム",
+    "foundedText": "2023年に設立されたPocketComputeは、スマートフォンの可能性を再定義しています。",
+    "story": {
+      "title": "私たちのストーリー",
+      "content": "PocketComputeは、シンプルな疑問から生まれました：なぜスマートフォンはもっと多くのことができないのか？ エンジニアとデザイナーからなる私たちのチームは、従来のスマートフォンの限界を打ち破り、前例のないカスタマイズと拡張性を提供するデバイスを作ることを目指しました。"
+    },
+    "mission": {
+      "title": "私たちの使命",
+      "content": "私たちの使命は、ユーザーがテクノロジーに適応するのではなく、ユーザーのユニークなニーズに適応するテクノロジーでユーザーに力を与えることです。PocketComputeはあなたと共に進化するよう設計されており、カスタマイズと拡張の無限の可能性を提供します。"
+    },
+    "team": {
+      "title": "私たちのチーム",
+      "content": "私たちの多様なチームは、家電製品、ソフトウェア開発、ハードウェアエンジニアリングの専門知識を集結しています。イノベーションへの情熱で結ばれ、個人向けテクノロジーの可能性の限界を押し広げることに取り組んでいます。"
+    }
+  },
+  "faq": {
+    "title": "よくある質問",
+    "subtitle": "PocketComputeに関する一般的な質問への回答を見つけてください。",
+    "availability": {
+      "question": "PocketComputeはいつ利用可能になりますか？",
+      "answer": "PocketComputeは2023年第3四半期からKickstarterキャンペーンを通じて予約注文が可能になります。最初のデバイスは2024年第1四半期にバッカーに出荷される予定で、一般販売は2024年第2四半期に予定されています。"
+    },
+    "os": {
+      "question": "PocketComputeはどのオペレーティングシステムを実行しますか？",
+      "answer": "PocketComputeはPocketOSで動作します。これは独自のハードウェア機能をサポートするために修正を加えたAndroid Open Source Project（AOSP）をベースにした当社独自のオペレーティングシステムです。Androidアプリと完全に互換性があり、ハードウェア拡張モジュール用の追加APIも提供しています。"
+    },
+    "expansion": {
+      "question": "マイクロコントローラー拡張はどのように機能しますか？",
+      "answer": "PocketComputeには、デバイスの背面に独自の拡張ポートがあり、USB経由で拡張モジュールに接続します。各モジュールには、デバイスの機能を拡張するさまざまなマイクロコントローラーやコンポーネントを含めることができます。開発者が独自のモジュールやソフトウェア統合を作成できるよう、包括的なSDKを提供しています。"
+    },
+    "payment": {
+      "question": "タップ＆ペイではどの決済プロセッサがサポートされていますか？",
+      "answer": "PocketComputeのタップ＆ペイ機能は、Stripe、Square、PayPal、Adyenなどの主要な決済プロセッサをサポートしています。追加の決済サービスとの統合を可能にする開発者APIを提供しています。内蔵のPOSソフトウェアは、標準的なクレジット/デビットカード、NFC決済、人気のあるモバイル決済ソリューションをサポートしています。"
+    },
+    "specs": {
+      "question": "PocketComputeの仕様は何ですか？",
+      "answer": "PocketComputeはあらゆるユースケースでスムーズなパフォーマンスを確保するためのハイエンド仕様を備えています：",
+      "list": {
+        "display": "6.5インチAMOLEDディスプレイ（2400 x 1080、120Hz）",
+        "processor": "5G接続対応のオクタコアプロセッサ",
+        "ram": "8GB/12GBのRAMオプション",
+        "storage": "128GB/256GB/512GBのストレージオプション",
+        "battery": "65W急速充電対応の4,500mAhバッテリー",
+        "camera": "トリプルカメラシステム（48MPメイン + 12MP超広角 + 8MP望遠）",
+        "ports": "独自の拡張ポート + USB-C + マイクロHDMI"
+      }
+    }
+  },
+  "kickstarter": {
+    "title": "Kickstarterをサポート",
+    "subtitle": "PocketComputeをいち早く体験し、この革新的なデバイスの実現を支援しましょう。Kickstarterキャンペーンを支援して、早期バード特別価格を手に入れましょう。",
+    "discount": "アーリーバード割引",
+    "price": "スーパーアーリーバード価格",
+    "shipping": "出荷開始まで",
+    "button": "Kickstarterで支援する"
+  },
+  "footer": {
+    "tagline": "スマートデバイスの可能性を再定義します。",
+    "copyright": "© 2023 PocketCompute. All rights reserved.",
+    "quickLinks": {
+      "title": "クイックリンク",
+      "features": "機能",
+      "functions": "主要機能",
+      "about": "会社概要",
+      "faq": "よくある質問",
+      "kickstarter": "Kickstarter"
+    },
+    "contact": {
+      "title": "お問い合わせ"
+    },
+    "newsletter": {
+      "title": "ニュースレター",
+      "subtitle": "最新情報を受け取るにはご登録ください。",
+      "placeholder": "メールアドレス"
+    },
+    "legal": {
+      "privacy": "プライバシーポリシー",
+      "terms": "利用規約",
+      "cookies": "Cookieポリシー"
+    }
+  }
+}

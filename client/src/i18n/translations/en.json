@@ -1,6 +1,6 @@
 {
   "meta": {
-    "title": "SmartX - The Next Generation Smart Device"
+    "title": "PocketCompute - The Next Generation Smart Device"
   },
   "navbar": {
     "features": "Features",
@@ -11,15 +11,15 @@
   },
   "hero": {
     "title": "The Future of Smart Devices",
-    "subtitle": "Introducing SmartX, the revolutionary device that combines smartphone functionality with customizable hardware expansion.",
+    "subtitle": "Introducing PocketCompute, the revolutionary device that combines smartphone functionality with customizable hardware expansion.",
     "kickstarterButton": "Support on Kickstarter",
     "learnMoreButton": "Learn More",
-    "deviceImageAlt": "SmartX Device",
+    "deviceImageAlt": "PocketCompute Device",
     "discount": "Pre-order now and save 30%"
   },
   "features": {
     "title": "Advanced Features",
-    "subtitle": "Discover what makes SmartX stand out from conventional smartphones and smart devices.",
+    "subtitle": "Discover what makes PocketCompute stand out from conventional smartphones and smart devices.",
     "display": {
       "title": "High-Resolution Display",
       "description": "Vibrant 6.5-inch AMOLED display with 120Hz refresh rate for smooth scrolling and stunning visuals."
@@ -47,11 +47,11 @@
   },
   "functions": {
     "title": "Core Functions",
-    "subtitle": "Discover the three revolutionary functions that make SmartX the most versatile device on the market.",
+    "subtitle": "Discover the three revolutionary functions that make PocketCompute the most versatile device on the market.",
     "preorderButton": "Pre-order Now",
     "general": {
       "title": "General Phone Use with Additional Ports",
-      "description": "Use SmartX as your everyday smartphone, enhanced with additional connectivity options that standard devices lack.",
+      "description": "Use PocketCompute as your everyday smartphone, enhanced with additional connectivity options that standard devices lack.",
       "features": {
         "usb": "Industry-standard USB-C",
         "hdmi": "Micro-HDMI output",
@@ -78,14 +78,14 @@
     }
   },
   "videoShowcase": {
-    "title": "See SmartX in Action",
-    "subtitle": "Watch how SmartX transforms the way you interact with technology.",
+    "title": "See PocketCompute in Action",
+    "subtitle": "Watch how PocketCompute transforms the way you interact with technology.",
     "playButton": "Play video",
-    "scrollInstruction": "Scroll down to see how SmartX adapts to your needs"
+    "scrollInstruction": "Scroll down to see how PocketCompute adapts to your needs"
   },
   "instagram": {
     "title": "From Our Instagram",
-    "subtitle": "Follow us @SmartXOfficial for the latest updates and behind-the-scenes content.",
+    "subtitle": "Follow us @PocketComputeOfficial for the latest updates and behind-the-scenes content.",
     "followButton": "Follow Us on Instagram",
     "error": "Unable to load Instagram feed. Please check back later."
   },
@@ -110,24 +110,24 @@
       "namePlaceholder": "Enter your name",
       "email": "Email",
       "emailPlaceholder": "Enter your email",
-      "privacyLabel": "I agree to receive updates from SmartX",
+      "privacyLabel": "I agree to receive updates from PocketCompute",
       "privacyText": "We respect your privacy and will never share your information.",
       "submit": "Subscribe Now",
       "submitting": "Subscribing..."
     }
   },
   "about": {
-    "title": "About SmartX",
+    "title": "About PocketCompute",
     "subtitle": "Learn more about our mission to revolutionize personal technology.",
-    "imageAlt": "SmartX Team",
-    "foundedText": "Founded in 2023, SmartX is redefining what a smartphone can be.",
+    "imageAlt": "PocketCompute Team",
+    "foundedText": "Founded in 2023, PocketCompute is redefining what a smartphone can be.",
     "story": {
       "title": "Our Story",
-      "content": "SmartX was born from a simple question: Why can't our smartphones do more? Our team of engineers and designers set out to create a device that breaks the limitations of conventional smartphones, offering unprecedented customization and expandability."
+      "content": "PocketCompute was born from a simple question: Why can't our smartphones do more? Our team of engineers and designers set out to create a device that breaks the limitations of conventional smartphones, offering unprecedented customization and expandability."
     },
     "mission": {
       "title": "Our Mission",
-      "content": "We're on a mission to empower users with technology that adapts to their unique needs, rather than forcing them to adapt to technology. SmartX is designed to evolve with you, offering endless possibilities for customization and expansion."
+      "content": "We're on a mission to empower users with technology that adapts to their unique needs, rather than forcing them to adapt to technology. PocketCompute is designed to evolve with you, offering endless possibilities for customization and expansion."
     },
     "team": {
       "title": "Our Team",
@@ -136,26 +136,26 @@
   },
   "faq": {
     "title": "Frequently Asked Questions",
-    "subtitle": "Find answers to common questions about SmartX.",
+    "subtitle": "Find answers to common questions about PocketCompute.",
     "availability": {
-      "question": "When will SmartX be available?",
-      "answer": "SmartX will be available for pre-order through our Kickstarter campaign starting in Q3 2023. The first devices are expected to ship to backers in Q1 2024, with general availability planned for Q2 2024."
+      "question": "When will PocketCompute be available?",
+      "answer": "PocketCompute will be available for pre-order through our Kickstarter campaign starting in Q3 2023. The first devices are expected to ship to backers in Q1 2024, with general availability planned for Q2 2024."
     },
     "os": {
-      "question": "What operating system does SmartX run?",
-      "answer": "SmartX runs on SmartOS, our custom-built operating system based on Android Open Source Project (AOSP) with modifications to support our unique hardware capabilities. It's fully compatible with Android apps while offering additional APIs for hardware expansion modules."
+      "question": "What operating system does PocketCompute run?",
+      "answer": "PocketCompute runs on PocketOS, our custom-built operating system based on Android Open Source Project (AOSP) with modifications to support our unique hardware capabilities. It's fully compatible with Android apps while offering additional APIs for hardware expansion modules."
     },
     "expansion": {
       "question": "How does the microcontroller expansion work?",
-      "answer": "SmartX features a proprietary expansion port on the back of the device that connects to our expansion modules via USB. Each module can contain various microcontrollers and components that extend the functionality of your device. We provide a comprehensive SDK for developers to create their own modules and software integrations."
+      "answer": "PocketCompute features a proprietary expansion port on the back of the device that connects to our expansion modules via USB. Each module can contain various microcontrollers and components that extend the functionality of your device. We provide a comprehensive SDK for developers to create their own modules and software integrations."
     },
     "payment": {
       "question": "What payment processors are supported for Tap and Pay?",
-      "answer": "SmartX's Tap and Pay feature supports major payment processors including Stripe, Square, PayPal, and Adyen. We provide a developer API that allows integration with additional payment services. Our built-in POS software supports standard credit/debit cards, NFC payments, and popular mobile payment solutions."
+      "answer": "PocketCompute's Tap and Pay feature supports major payment processors including Stripe, Square, PayPal, and Adyen. We provide a developer API that allows integration with additional payment services. Our built-in POS software supports standard credit/debit cards, NFC payments, and popular mobile payment solutions."
     },
     "specs": {
-      "question": "What are the specifications of SmartX?",
-      "answer": "SmartX features high-end specifications to ensure smooth performance for all use cases:",
+      "question": "What are the specifications of PocketCompute?",
+      "answer": "PocketCompute features high-end specifications to ensure smooth performance for all use cases:",
       "list": {
         "display": "6.5-inch AMOLED display (2400 x 1080, 120Hz)",
         "processor": "Octa-core processor with 5G connectivity",
@@ -169,7 +169,7 @@
   },
   "kickstarter": {
     "title": "Support Our Kickstarter",
-    "subtitle": "Be among the first to experience SmartX and help bring this revolutionary device to life. Back our Kickstarter campaign and get exclusive early-bird pricing.",
+    "subtitle": "Be among the first to experience PocketCompute and help bring this revolutionary device to life. Back our Kickstarter campaign and get exclusive early-bird pricing.",
     "discount": "Early Bird Discount",
     "price": "Super Early Bird Price",
     "shipping": "Until Shipping Begins",
@@ -177,7 +177,7 @@
   },
   "footer": {
     "tagline": "Redefining what a smart device can be.",
-    "copyright": "© 2023 SmartX. All rights reserved.",
+    "copyright": "© 2023 PocketCompute. All rights reserved.",
     "quickLinks": {
       "title": "Quick Links",
       "features": "Features",

@@ -1,0 +1,203 @@
+{
+  "meta": {
+    "title": "PocketCompute - Das Smart-Gerät der nächsten Generation"
+  },
+  "navbar": {
+    "features": "Funktionen",
+    "keyFunctions": "Kernfunktionen",
+    "about": "Über uns",
+    "faq": "FAQ",
+    "language": "Sprache"
+  },
+  "hero": {
+    "title": "Die Zukunft der Smart-Geräte",
+    "subtitle": "Einführung von PocketCompute, dem revolutionären Gerät, das Smartphone-Funktionalität mit anpassbarer Hardware-Erweiterung kombiniert.",
+    "kickstarterButton": "Auf Kickstarter unterstützen",
+    "learnMoreButton": "Mehr erfahren",
+    "deviceImageAlt": "PocketCompute Gerät",
+    "discount": "Jetzt vorbestellen und 30% sparen"
+  },
+  "features": {
+    "title": "Fortschrittliche Funktionen",
+    "subtitle": "Entdecken Sie, was PocketCompute von herkömmlichen Smartphones und Smart-Geräten unterscheidet.",
+    "display": {
+      "title": "Hochauflösendes Display",
+      "description": "Lebendiges 6,5-Zoll-AMOLED-Display mit 120 Hz Bildwiederholrate für flüssiges Scrollen und beeindruckende Visualisierungen."
+    },
+    "processor": {
+      "title": "Fortschrittlicher Prozessor",
+      "description": "Octa-Core-Prozessor der neuesten Generation mit dedizierten KI-Fähigkeiten für blitzschnelle Leistung."
+    },
+    "camera": {
+      "title": "Professionelles Kamerasystem",
+      "description": "Dreifach-Kamera-Setup mit 48-MP-Hauptsensor, Ultraweitwinkel- und Teleobjektiv für professionelle Fotografie."
+    },
+    "ports": {
+      "title": "Erweitertes Anschlusssystem",
+      "description": "Mehrere Verbindungsoptionen einschließlich USB-C, Micro-HDMI und unserem proprietären Erweiterungsanschluss für ultimative Vielseitigkeit."
+    },
+    "charging": {
+      "title": "Schnellladung",
+      "description": "65W-Turbo-Ladetechnologie bringt Sie in nur 15 Minuten von 0 auf 60% mit ganztägiger Batterielaufzeit."
+    },
+    "security": {
+      "title": "Verbesserte Sicherheit",
+      "description": "Fortschrittliche biometrische Sicherheit mit Fingerabdrucksensor unter dem Display und Gesichtserkennungstechnologie."
+    }
+  },
+  "functions": {
+    "title": "Kernfunktionen",
+    "subtitle": "Entdecken Sie die drei revolutionären Funktionen, die PocketCompute zum vielseitigsten Gerät auf dem Markt machen.",
+    "preorderButton": "Jetzt Vorbestellen",
+    "general": {
+      "title": "Allgemeine Telefonnutzung mit zusätzlichen Anschlüssen",
+      "description": "Verwenden Sie PocketCompute als Ihr alltägliches Smartphone, verbessert mit zusätzlichen Konnektivitätsoptionen, die Standardgeräte nicht bieten.",
+      "features": {
+        "usb": "Industriestandard USB-C",
+        "hdmi": "Micro-HDMI-Ausgang",
+        "audio": "3,5-mm-Audiobuchse"
+      }
+    },
+    "payment": {
+      "title": "Tap-and-Pay-Verarbeitung",
+      "description": "Verarbeiten Sie kontaktlose Zahlungen überall mit fortschrittlichen NFC-Fähigkeiten und sicherer Transaktionsverarbeitung.",
+      "features": {
+        "nfc": "Erweiterte NFC-Fähigkeiten",
+        "secure": "Sichere Zahlungsabwicklung",
+        "pos": "Integrierte POS-Software"
+      }
+    },
+    "expansion": {
+      "title": "Mikrocontroller-Erweiterung",
+      "description": "Verbinden Sie zusätzliche Mikrocontroller und Elektronik über unseren proprietären Erweiterungsanschluss für unbegrenzte Anpassung.",
+      "features": {
+        "usb": "USB-Erweiterungsanschluss",
+        "modules": "Unterstützung für Hardware-Module",
+        "sdk": "Open-Source-SDK"
+      }
+    }
+  },
+  "videoShowcase": {
+    "title": "Sehen Sie PocketCompute in Aktion",
+    "subtitle": "Sehen Sie, wie PocketCompute die Art und Weise verändert, wie Sie mit Technologie interagieren.",
+    "playButton": "Video abspielen",
+    "scrollInstruction": "Scrollen Sie nach unten, um zu sehen, wie sich PocketCompute an Ihre Bedürfnisse anpasst"
+  },
+  "instagram": {
+    "title": "Aus unserem Instagram",
+    "subtitle": "Folgen Sie uns @PocketComputeOfficial für die neuesten Updates und Behind-the-Scenes-Inhalte.",
+    "followButton": "Folgen Sie uns auf Instagram",
+    "error": "Instagram-Feed konnte nicht geladen werden. Bitte versuchen Sie es später erneut."
+  },
+  "newsletter": {
+    "title": "Bleiben Sie auf dem Laufenden",
+    "subtitle": "Abonnieren Sie unseren Newsletter für exklusive Updates, frühzeitige Zugriffsmöglichkeiten und Sonderangebote.",
+    "success": {
+      "title": "Abonnement erfolgreich",
+      "message": "Vielen Dank für Ihr Abonnement unseres Newsletters!"
+    },
+    "error": {
+      "title": "Abonnement fehlgeschlagen",
+      "message": "Abonnement fehlgeschlagen. Bitte versuchen Sie es später erneut."
+    },
+    "validation": {
+      "nameRequired": "Bitte geben Sie Ihren Namen ein",
+      "emailInvalid": "Bitte geben Sie eine gültige E-Mail-Adresse ein",
+      "privacyRequired": "Sie müssen zustimmen, Updates zu erhalten"
+    },
+    "form": {
+      "name": "Name",
+      "namePlaceholder": "Geben Sie Ihren Namen ein",
+      "email": "E-Mail",
+      "emailPlaceholder": "Geben Sie Ihre E-Mail ein",
+      "privacyLabel": "Ich stimme zu, Updates von PocketCompute zu erhalten",
+      "privacyText": "Wir respektieren Ihre Privatsphäre und werden Ihre Informationen niemals weitergeben.",
+      "submit": "Jetzt abonnieren",
+      "submitting": "Wird abonniert..."
+    }
+  },
+  "about": {
+    "title": "Über PocketCompute",
+    "subtitle": "Erfahren Sie mehr über unsere Mission, persönliche Technologie zu revolutionieren.",
+    "imageAlt": "PocketCompute Team",
+    "foundedText": "Gegründet im Jahr 2023, definiert PocketCompute neu, was ein Smartphone sein kann.",
+    "story": {
+      "title": "Unsere Geschichte",
+      "content": "PocketCompute entstand aus einer einfachen Frage: Warum können unsere Smartphones nicht mehr? Unser Team aus Ingenieuren und Designern machte sich auf den Weg, ein Gerät zu entwickeln, das die Beschränkungen herkömmlicher Smartphones durchbricht und beispiellose Anpassung und Erweiterbarkeit bietet."
+    },
+    "mission": {
+      "title": "Unsere Mission",
+      "content": "Wir haben es uns zur Aufgabe gemacht, Benutzer mit Technologie zu befähigen, die sich an ihre individuellen Bedürfnisse anpasst, anstatt sie zu zwingen, sich an die Technologie anzupassen. PocketCompute ist so konzipiert, dass es sich mit Ihnen entwickelt und endlose Möglichkeiten zur Anpassung und Erweiterung bietet."
+    },
+    "team": {
+      "title": "Unser Team",
+      "content": "Unser vielfältiges Team vereint Expertise aus den Bereichen Unterhaltungselektronik, Softwareentwicklung und Hardware-Engineering. Vereint durch eine Leidenschaft für Innovation setzen wir uns dafür ein, die Grenzen des Möglichen in der persönlichen Technologie zu erweitern."
+    }
+  },
+  "faq": {
+    "title": "Häufig gestellte Fragen",
+    "subtitle": "Finden Sie Antworten auf häufig gestellte Fragen zu PocketCompute.",
+    "availability": {
+      "question": "Wann wird PocketCompute verfügbar sein?",
+      "answer": "PocketCompute wird ab Q3 2023 über unsere Kickstarter-Kampagne vorbestellbar sein. Die ersten Geräte werden voraussichtlich im Q1 2024 an Unterstützer ausgeliefert, die allgemeine Verfügbarkeit ist für Q2 2024 geplant."
+    },
+    "os": {
+      "question": "Welches Betriebssystem verwendet PocketCompute?",
+      "answer": "PocketCompute läuft auf PocketOS, unserem maßgeschneiderten Betriebssystem, das auf dem Android Open Source Project (AOSP) basiert und Modifikationen zur Unterstützung unserer einzigartigen Hardware-Fähigkeiten enthält. Es ist vollständig kompatibel mit Android-Apps und bietet zusätzliche APIs für Hardware-Erweiterungsmodule."
+    },
+    "expansion": {
+      "question": "Wie funktioniert die Mikrocontroller-Erweiterung?",
+      "answer": "PocketCompute verfügt über einen proprietären Erweiterungsanschluss auf der Rückseite des Geräts, der über USB mit unseren Erweiterungsmodulen verbunden wird. Jedes Modul kann verschiedene Mikrocontroller und Komponenten enthalten, die die Funktionalität Ihres Geräts erweitern. Wir bieten ein umfassendes SDK für Entwickler, um ihre eigenen Module und Software-Integrationen zu erstellen."
+    },
+    "payment": {
+      "question": "Welche Zahlungsabwickler werden für Tap and Pay unterstützt?",
+      "answer": "Die Tap-and-Pay-Funktion von PocketCompute unterstützt große Zahlungsabwickler wie Stripe, Square, PayPal und Adyen. Wir bieten eine Entwickler-API, die die Integration mit zusätzlichen Zahlungsdiensten ermöglicht. Unsere integrierte POS-Software unterstützt Standard-Kredit-/Debitkarten, NFC-Zahlungen und beliebte mobile Zahlungslösungen."
+    },
+    "specs": {
+      "question": "Was sind die Spezifikationen von PocketCompute?",
+      "answer": "PocketCompute verfügt über High-End-Spezifikationen, um eine reibungslose Leistung für alle Anwendungsfälle zu gewährleisten:",
+      "list": {
+        "display": "6,5-Zoll-AMOLED-Display (2400 x 1080, 120Hz)",
+        "processor": "Octa-Core-Prozessor mit 5G-Konnektivität",
+        "ram": "8GB/12GB RAM-Optionen",
+        "storage": "128GB/256GB/512GB Speicheroptionen",
+        "battery": "4.500mAh-Akku mit 65W-Schnellladung",
+        "camera": "Dreifach-Kamerasystem (48MP Hauptkamera + 12MP Ultraweitwinkel + 8MP Teleobjektiv)",
+        "ports": "Proprietärer Erweiterungsanschluss + USB-C + Micro-HDMI"
+      }
+    }
+  },
+  "kickstarter": {
+    "title": "Unterstützen Sie unser Kickstarter",
+    "subtitle": "Seien Sie unter den Ersten, die PocketCompute erleben und helfen Sie mit, dieses revolutionäre Gerät zum Leben zu erwecken. Unterstützen Sie unsere Kickstarter-Kampagne und erhalten Sie exklusive Early-Bird-Preise.",
+    "discount": "Early-Bird-Rabatt",
+    "price": "Super-Early-Bird-Preis",
+    "shipping": "Bis zum Versandbeginn",
+    "button": "Unterstützen Sie uns auf Kickstarter"
+  },
+  "footer": {
+    "tagline": "Neu definieren, was ein Smart-Gerät sein kann.",
+    "copyright": "© 2023 PocketCompute. Alle Rechte vorbehalten.",
+    "quickLinks": {
+      "title": "Schnelllinks",
+      "features": "Funktionen",
+      "functions": "Kernfunktionen",
+      "about": "Über uns",
+      "faq": "FAQ",
+      "kickstarter": "Kickstarter"
+    },
+    "contact": {
+      "title": "Kontakt"
+    },
+    "newsletter": {
+      "title": "Newsletter",
+      "subtitle": "Abonnieren Sie, um die neuesten Updates zu erhalten.",
+      "placeholder": "Ihre E-Mail"
+    },
+    "legal": {
+      "privacy": "Datenschutzrichtlinie",
+      "terms": "Nutzungsbedingungen",
+      "cookies": "Cookie-Richtlinie"
+    }
+  }
+}
