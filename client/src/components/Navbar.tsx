@@ -65,7 +65,12 @@ const Navbar = () => {
             {/* Language Selector */}
             <Select defaultValue={i18n.language} onValueChange={handleLanguageChange}>
               <SelectTrigger className="w-[180px]">
-                <SelectValue placeholder={t("navbar.language")} />
+                <SelectValue>
+                  <span className="flex items-center gap-2">
+                    <span>{languages.find(lang => lang.code === i18n.language)?.flag}</span>
+                    <span>{languages.find(lang => lang.code === i18n.language)?.name}</span>
+                  </span>
+                </SelectValue>
               </SelectTrigger>
               <SelectContent>
                 {languages.map((lang) => (
