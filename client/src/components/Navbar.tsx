@@ -9,22 +9,31 @@ const Navbar = () => {
   const { t, i18n } = useTranslation();
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
   const [isScrolled, setIsScrolled] = useState(false);
-  
+
+  // Language options with flags (Unicode characters used for flags)
+  const languages = [
+    { code: "en", name: "English", flag: "🇺🇸" },
+    { code: "es", name: "Español", flag: "🇪🇸" },
+    { code: "fr", name: "Français", flag: "🇫🇷" },
+    { code: "de", name: "Deutsch", flag: "🇩🇪" },
+    { code: "ja", name: "日本語", flag: "🇯🇵" },
+  ];
+
   // Handle scroll event to change navbar appearance
   useEffect(() => {
     const handleScroll = () => {
       setIsScrolled(window.scrollY > 10);
     };
-    
+
     window.addEventListener('scroll', handleScroll);
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
-  
+
   // Handle language change
   const handleLanguageChange = (value: string) => {
     i18n.changeLanguage(value);
   };
-  
+
   return (
     <header className={`fixed w-full z-50 transition-all duration-300 ${isScrolled ? 'bg-white/90 backdrop-blur-md shadow-sm' : 'bg-transparent'}`}>
       <div className="container mx-auto px-4 md:px-6 lg:px-8">
@@ -36,7 +45,7 @@ const Navbar = () => {
               </span>
             </Link>
           </div>
-          
+
           <div className="hidden md:flex items-center space-x-8">
             <a href="#features" className="text-neutral hover:text-primary transition duration-200">
               {t('navbar.features')}
@@ -51,19 +60,25 @@ const Navbar = () => {
               {t('navbar.faq')}
             </a>
           </div>
-          
+
           <div className="flex items-center space-x-4">
             {/* Language Selector */}
             <Select defaultValue={i18n.language} onValueChange={handleLanguageChange}>
-              <SelectTrigger className="w-[110px] h-9 px-3 text-sm border-gray-300">
-                <SelectValue placeholder={t('navbar.language')} />
+              <SelectTrigger className="w-[180px]">
+                <SelectValue placeholder={t("navbar.language")} />
               </SelectTrigger>
               <SelectContent>
-                <SelectItem value="en">English</SelectItem>
-                <SelectItem value="es">Español</SelectItem>
+                {languages.map((lang) => (
+                  <SelectItem key={lang.code} value={lang.code}>
+                    <span className="flex items-center gap-2">
+                      <span>{lang.flag}</span>
+                      <span>{lang.name}</span>
+                    </span>
+                  </SelectItem>
+                ))}
               </SelectContent>
             </Select>
-            
+
             {/* Mobile Menu Button */}
             <Button 
               variant="ghost" 
@@ -76,7 +91,7 @@ const Navbar = () => {
           </div>
         </nav>
       </div>
-      
+
       {/* Mobile Menu */}
       {isMobileMenuOpen && (
         <div className="md:hidden bg-white px-4 py-3 shadow-lg">

@@ -1,34 +1,34 @@
+
 import i18n from 'i18next';
 import { initReactI18next } from 'react-i18next';
-import LanguageDetector from 'i18next-browser-languagedetector';
-
 import enTranslations from './translations/en.json';
+import deTranslations from './translations/de.json';
+import frTranslations from './translations/fr.json';
+import jaTranslations from './translations/ja.json';
 import esTranslations from './translations/es.json';
 
-// Initialize i18next
+export const languages = [
+  { code: 'en', name: 'English', flag: '🇬🇧' },
+  { code: 'de', name: 'Deutsch', flag: '🇩🇪' },
+  { code: 'fr', name: 'Français', flag: '🇫🇷' },
+  { code: 'ja', name: '日本語', flag: '🇯🇵' },
+  { code: 'es', name: 'Español', flag: '🇪🇸' }
+];
+
 i18n
-  .use(LanguageDetector)
   .use(initReactI18next)
   .init({
-    debug: process.env.NODE_ENV === 'development',
+    resources: {
+      en: { translation: enTranslations },
+      de: { translation: deTranslations },
+      fr: { translation: frTranslations },
+      ja: { translation: jaTranslations },
+      es: { translation: esTranslations }
+    },
+    lng: 'en',
     fallbackLng: 'en',
     interpolation: {
-      escapeValue: false, // React already does escaping
-    },
-    resources: {
-      en: {
-        translation: enTranslations
-      },
-      es: {
-        translation: esTranslations
-      }
-    },
-    detection: {
-      order: ['localStorage', 'navigator'],
-      caches: ['localStorage']
-    },
-    react: {
-      useSuspense: false
+      escapeValue: false
     }
   });
 
