@@ -3,11 +3,9 @@ import { m } from "framer-motion";
 import { Button } from "@/components/ui/button";
 import { useInView } from "react-intersection-observer";
 import { ChevronRight } from "lucide-react";
-import { 
-  FaTwitter, 
-  FaInstagram, 
-  FaFacebook 
-} from "react-icons/fa";
+import { FaInstagram, FaFacebook, FaYoutube } from "react-icons/fa";
+import { SiX } from "react-icons/si";
+import { socialMediaLinks } from "./Footer";
 
 const HeroSection = () => {
   const { t } = useTranslation();
@@ -69,11 +67,7 @@ const HeroSection = () => {
                   <ChevronRight className="h-5 w-5" />
                 </a>
               </Button>
-              <Button size="lg" variant="outline" className="inline-flex items-center justify-center" asChild>
-                <a href="#learn-more">
-                  {t('hero.learnMoreButton')}
-                </a>
-              </Button>
+              {/* Learn More button removed as requested */}
             </div>
           </m.div>
           
@@ -119,15 +113,18 @@ const HeroSection = () => {
       </div>
 
       <div className="absolute bottom-10 left-1/2 transform -translate-x-1/2 flex space-x-6">
-        <a href="https://twitter.com/SmartXOfficial" aria-label="Twitter" target="_blank" rel="noopener noreferrer" className="text-neutral hover:text-primary transition-colors duration-300">
-          <FaTwitter className="h-6 w-6" />
-        </a>
-        <a href="https://instagram.com/SmartXOfficial" aria-label="Instagram" target="_blank" rel="noopener noreferrer" className="text-neutral hover:text-primary transition-colors duration-300">
-          <FaInstagram className="h-6 w-6" />
-        </a>
-        <a href="https://facebook.com/SmartXOfficial" aria-label="Facebook" target="_blank" rel="noopener noreferrer" className="text-neutral hover:text-primary transition-colors duration-300">
-          <FaFacebook className="h-6 w-6" />
-        </a>
+        {socialMediaLinks.map((social, index) => (
+          <a 
+            key={index}
+            href={social.href} 
+            aria-label={social.ariaLabel} 
+            target="_blank" 
+            rel="noopener noreferrer" 
+            className="text-neutral hover:text-primary transition-colors duration-300"
+          >
+            <social.icon className="h-6 w-6" />
+          </a>
+        ))}
       </div>
     </section>
   );

@@ -34,6 +34,23 @@ const Navbar = () => {
     i18n.changeLanguage(value);
   };
 
+  // Function to handle smooth scrolling to sections
+  const scrollToSection = (sectionId: string) => {
+    const section = document.getElementById(sectionId);
+    if (section) {
+      // Close mobile menu if open
+      if (isMobileMenuOpen) {
+        setIsMobileMenuOpen(false);
+      }
+      
+      // Scroll to section with smooth behavior
+      section.scrollIntoView({ 
+        behavior: 'smooth',
+        block: 'start'
+      });
+    }
+  };
+
   return (
     <header className={`fixed w-full z-50 transition-all duration-300 ${isScrolled ? 'bg-white/90 backdrop-blur-md shadow-sm' : 'bg-transparent'}`}>
       <div className="container mx-auto px-4 md:px-6 lg:px-8">
@@ -41,41 +58,52 @@ const Navbar = () => {
           <div className="flex items-center">
             <Link href="/">
               <span className="text-2xl font-bold text-primary cursor-pointer">
-                SmartX
+                PocketCompute
               </span>
             </Link>
           </div>
 
           <div className="hidden md:flex items-center space-x-8">
-            <a href="#features" className="text-neutral hover:text-primary transition duration-200">
+            <button 
+              onClick={() => scrollToSection('features')} 
+              className="text-neutral hover:text-primary transition duration-200"
+            >
               {t('navbar.features')}
-            </a>
-            <a href="#functions" className="text-neutral hover:text-primary transition duration-200">
+            </button>
+            <button 
+              onClick={() => scrollToSection('functions')} 
+              className="text-neutral hover:text-primary transition duration-200"
+            >
               {t('navbar.keyFunctions')}
-            </a>
-            <a href="#about" className="text-neutral hover:text-primary transition duration-200">
+            </button>
+            <button 
+              onClick={() => scrollToSection('about')} 
+              className="text-neutral hover:text-primary transition duration-200"
+            >
               {t('navbar.about')}
-            </a>
-            <a href="#faq" className="text-neutral hover:text-primary transition duration-200">
+            </button>
+            <button 
+              onClick={() => scrollToSection('faq')} 
+              className="text-neutral hover:text-primary transition duration-200"
+            >
               {t('navbar.faq')}
-            </a>
+            </button>
           </div>
 
           <div className="flex items-center space-x-4">
             {/* Language Selector */}
             <Select value={i18n.language} onValueChange={handleLanguageChange}>
               <SelectTrigger className="w-[180px]">
-                <SelectValue>
-                  {({ value }) => {
-                    const language = languages.find(lang => lang.code === value);
-                    return (
-                      <span className="flex items-center gap-2">
-                        <span className="text-base">{language?.flag}</span>
-                        <span>{language?.name}</span>
-                      </span>
-                    );
-                  }}
-                </SelectValue>
+                <SelectValue placeholder={
+                  <div className="flex items-center gap-2">
+                    <span className="text-base">
+                      {languages.find(lang => lang.code === i18n.language)?.flag}
+                    </span>
+                    <span>
+                      {languages.find(lang => lang.code === i18n.language)?.name}
+                    </span>
+                  </div>
+                } />
               </SelectTrigger>
               <SelectContent>
                 {languages.map((lang) => (
@@ -106,34 +134,30 @@ const Navbar = () => {
       {isMobileMenuOpen && (
         <div className="md:hidden bg-white px-4 py-3 shadow-lg">
           <div className="flex flex-col space-y-3">
-            <a 
-              href="#features" 
-              className="text-neutral hover:text-primary transition duration-200 py-2"
-              onClick={() => setIsMobileMenuOpen(false)}
+            <button 
+              onClick={() => scrollToSection('features')} 
+              className="text-neutral hover:text-primary transition duration-200 py-2 text-left"
             >
               {t('navbar.features')}
-            </a>
-            <a 
-              href="#functions" 
-              className="text-neutral hover:text-primary transition duration-200 py-2"
-              onClick={() => setIsMobileMenuOpen(false)}
+            </button>
+            <button 
+              onClick={() => scrollToSection('functions')} 
+              className="text-neutral hover:text-primary transition duration-200 py-2 text-left"
             >
               {t('navbar.keyFunctions')}
-            </a>
-            <a 
-              href="#about" 
-              className="text-neutral hover:text-primary transition duration-200 py-2"
-              onClick={() => setIsMobileMenuOpen(false)}
+            </button>
+            <button 
+              onClick={() => scrollToSection('about')} 
+              className="text-neutral hover:text-primary transition duration-200 py-2 text-left"
             >
               {t('navbar.about')}
-            </a>
-            <a 
-              href="#faq" 
-              className="text-neutral hover:text-primary transition duration-200 py-2"
-              onClick={() => setIsMobileMenuOpen(false)}
+            </button>
+            <button 
+              onClick={() => scrollToSection('faq')} 
+              className="text-neutral hover:text-primary transition duration-200 py-2 text-left"
             >
               {t('navbar.faq')}
-            </a>
+            </button>
           </div>
         </div>
       )}
