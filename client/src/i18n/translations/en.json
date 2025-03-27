@@ -1,0 +1,203 @@
+{
+  "meta": {
+    "title": "SmartX - The Next Generation Smart Device"
+  },
+  "navbar": {
+    "features": "Features",
+    "keyFunctions": "Key Functions",
+    "about": "About",
+    "faq": "FAQ",
+    "language": "Language"
+  },
+  "hero": {
+    "title": "The Future of Smart Devices",
+    "subtitle": "Introducing SmartX, the revolutionary device that combines smartphone functionality with customizable hardware expansion.",
+    "kickstarterButton": "Support on Kickstarter",
+    "learnMoreButton": "Learn More",
+    "deviceImageAlt": "SmartX Device",
+    "discount": "Pre-order now and save 30%"
+  },
+  "features": {
+    "title": "Advanced Features",
+    "subtitle": "Discover what makes SmartX stand out from conventional smartphones and smart devices.",
+    "display": {
+      "title": "High-Resolution Display",
+      "description": "Vibrant 6.5-inch AMOLED display with 120Hz refresh rate for smooth scrolling and stunning visuals."
+    },
+    "processor": {
+      "title": "Advanced Processor",
+      "description": "Latest-gen octa-core processor with dedicated AI capabilities for lightning-fast performance."
+    },
+    "camera": {
+      "title": "Pro Camera System",
+      "description": "Triple-camera setup with 48MP main sensor, ultra-wide, and telephoto lenses for professional-grade photography."
+    },
+    "ports": {
+      "title": "Expanded Port System",
+      "description": "Multiple connection options including USB-C, micro-HDMI and our proprietary expansion port for ultimate versatility."
+    },
+    "charging": {
+      "title": "Fast Charging",
+      "description": "65W turbo charging technology gets you from 0 to 60% in just 15 minutes with all-day battery life."
+    },
+    "security": {
+      "title": "Enhanced Security",
+      "description": "Advanced biometric security with under-display fingerprint sensor and facial recognition technology."
+    }
+  },
+  "functions": {
+    "title": "Core Functions",
+    "subtitle": "Discover the three revolutionary functions that make SmartX the most versatile device on the market.",
+    "preorderButton": "Pre-order Now",
+    "general": {
+      "title": "General Phone Use with Additional Ports",
+      "description": "Use SmartX as your everyday smartphone, enhanced with additional connectivity options that standard devices lack.",
+      "features": {
+        "usb": "Industry-standard USB-C",
+        "hdmi": "Micro-HDMI output",
+        "audio": "3.5mm audio jack"
+      }
+    },
+    "payment": {
+      "title": "Tap and Pay Processing",
+      "description": "Process contactless payments anywhere with advanced NFC capabilities and secure transaction processing.",
+      "features": {
+        "nfc": "Enhanced NFC capabilities",
+        "secure": "Secure payment processing",
+        "pos": "POS software built-in"
+      }
+    },
+    "expansion": {
+      "title": "Microcontroller Expansion",
+      "description": "Connect additional microcontrollers and electronics through our proprietary expansion port for unlimited customization.",
+      "features": {
+        "usb": "USB expansion port",
+        "modules": "Hardware modules support",
+        "sdk": "Open-source SDK"
+      }
+    }
+  },
+  "videoShowcase": {
+    "title": "See SmartX in Action",
+    "subtitle": "Watch how SmartX transforms the way you interact with technology.",
+    "playButton": "Play video",
+    "scrollInstruction": "Scroll down to see how SmartX adapts to your needs"
+  },
+  "instagram": {
+    "title": "From Our Instagram",
+    "subtitle": "Follow us @SmartXOfficial for the latest updates and behind-the-scenes content.",
+    "followButton": "Follow Us on Instagram",
+    "error": "Unable to load Instagram feed. Please check back later."
+  },
+  "newsletter": {
+    "title": "Stay Updated",
+    "subtitle": "Subscribe to our newsletter for exclusive updates, early access opportunities, and special offers.",
+    "success": {
+      "title": "Subscription Successful",
+      "message": "Thank you for subscribing to our newsletter!"
+    },
+    "error": {
+      "title": "Subscription Failed",
+      "message": "Failed to subscribe. Please try again later."
+    },
+    "validation": {
+      "nameRequired": "Please enter your name",
+      "emailInvalid": "Please enter a valid email address",
+      "privacyRequired": "You must agree to receive updates"
+    },
+    "form": {
+      "name": "Name",
+      "namePlaceholder": "Enter your name",
+      "email": "Email",
+      "emailPlaceholder": "Enter your email",
+      "privacyLabel": "I agree to receive updates from SmartX",
+      "privacyText": "We respect your privacy and will never share your information.",
+      "submit": "Subscribe Now",
+      "submitting": "Subscribing..."
+    }
+  },
+  "about": {
+    "title": "About SmartX",
+    "subtitle": "Learn more about our mission to revolutionize personal technology.",
+    "imageAlt": "SmartX Team",
+    "foundedText": "Founded in 2023, SmartX is redefining what a smartphone can be.",
+    "story": {
+      "title": "Our Story",
+      "content": "SmartX was born from a simple question: Why can't our smartphones do more? Our team of engineers and designers set out to create a device that breaks the limitations of conventional smartphones, offering unprecedented customization and expandability."
+    },
+    "mission": {
+      "title": "Our Mission",
+      "content": "We're on a mission to empower users with technology that adapts to their unique needs, rather than forcing them to adapt to technology. SmartX is designed to evolve with you, offering endless possibilities for customization and expansion."
+    },
+    "team": {
+      "title": "Our Team",
+      "content": "Our diverse team brings together expertise from consumer electronics, software development, and hardware engineering. United by a passion for innovation, we're committed to pushing the boundaries of what's possible in personal technology."
+    }
+  },
+  "faq": {
+    "title": "Frequently Asked Questions",
+    "subtitle": "Find answers to common questions about SmartX.",
+    "availability": {
+      "question": "When will SmartX be available?",
+      "answer": "SmartX will be available for pre-order through our Kickstarter campaign starting in Q3 2023. The first devices are expected to ship to backers in Q1 2024, with general availability planned for Q2 2024."
+    },
+    "os": {
+      "question": "What operating system does SmartX run?",
+      "answer": "SmartX runs on SmartOS, our custom-built operating system based on Android Open Source Project (AOSP) with modifications to support our unique hardware capabilities. It's fully compatible with Android apps while offering additional APIs for hardware expansion modules."
+    },
+    "expansion": {
+      "question": "How does the microcontroller expansion work?",
+      "answer": "SmartX features a proprietary expansion port on the back of the device that connects to our expansion modules via USB. Each module can contain various microcontrollers and components that extend the functionality of your device. We provide a comprehensive SDK for developers to create their own modules and software integrations."
+    },
+    "payment": {
+      "question": "What payment processors are supported for Tap and Pay?",
+      "answer": "SmartX's Tap and Pay feature supports major payment processors including Stripe, Square, PayPal, and Adyen. We provide a developer API that allows integration with additional payment services. Our built-in POS software supports standard credit/debit cards, NFC payments, and popular mobile payment solutions."
+    },
+    "specs": {
+      "question": "What are the specifications of SmartX?",
+      "answer": "SmartX features high-end specifications to ensure smooth performance for all use cases:",
+      "list": {
+        "display": "6.5-inch AMOLED display (2400 x 1080, 120Hz)",
+        "processor": "Octa-core processor with 5G connectivity",
+        "ram": "8GB/12GB RAM options",
+        "storage": "128GB/256GB/512GB storage options",
+        "battery": "4,500mAh battery with 65W fast charging",
+        "camera": "Triple camera system (48MP main + 12MP ultrawide + 8MP telephoto)",
+        "ports": "Proprietary expansion port + USB-C + micro-HDMI"
+      }
+    }
+  },
+  "kickstarter": {
+    "title": "Support Our Kickstarter",
+    "subtitle": "Be among the first to experience SmartX and help bring this revolutionary device to life. Back our Kickstarter campaign and get exclusive early-bird pricing.",
+    "discount": "Early Bird Discount",
+    "price": "Super Early Bird Price",
+    "shipping": "Until Shipping Begins",
+    "button": "Back Us on Kickstarter"
+  },
+  "footer": {
+    "tagline": "Redefining what a smart device can be.",
+    "copyright": "© 2023 SmartX. All rights reserved.",
+    "quickLinks": {
+      "title": "Quick Links",
+      "features": "Features",
+      "functions": "Key Functions",
+      "about": "About Us",
+      "faq": "FAQ",
+      "kickstarter": "Kickstarter"
+    },
+    "contact": {
+      "title": "Contact"
+    },
+    "newsletter": {
+      "title": "Newsletter",
+      "subtitle": "Subscribe to get the latest updates.",
+      "placeholder": "Your email"
+    },
+    "legal": {
+      "privacy": "Privacy Policy",
+      "terms": "Terms of Service",
+      "cookies": "Cookie Policy"
+    }
+  }
+}
