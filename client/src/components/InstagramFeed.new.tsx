@@ -6,6 +6,7 @@ import { useQuery } from "@tanstack/react-query";
 import { Heart, MessageCircle } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { FaInstagram } from "react-icons/fa";
+import { socialMediaLinks } from "./Footer.new";
 
 interface InstagramPost {
   id: string;
@@ -21,8 +22,11 @@ const InstagramFeed = () => {
     threshold: 0.1,
   });
 
+  // Get Instagram link from socialMediaLinks
+  const instagramLink = socialMediaLinks.find(social => social.ariaLabel === "Instagram")?.href || "https://instagram.com/PocketComputeOfficial";
+
   // Fetch Instagram feed from our API
-  const { data, isLoading, error } = useQuery({
+  const { data, isLoading, error } = useQuery<{ feed: InstagramPost[] }>({
     queryKey: ['/api/instagram/feed'],
     staleTime: 60 * 60 * 1000, // 1 hour
   });
@@ -65,7 +69,7 @@ const InstagramFeed = () => {
         <div className="mt-10 text-center">
           <Button variant="outline" className="inline-flex items-center gap-2" asChild>
             <a 
-              href="https://instagram.com/SmartXOfficial" 
+              href={instagramLink} 
               target="_blank" 
               rel="noopener noreferrer"
             >
