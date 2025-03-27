@@ -8,7 +8,7 @@ const TermsOfService = () => {
     <div className="min-h-screen bg-gray-50 pt-24 pb-16">
       <div className="container mx-auto px-4 md:px-6 lg:px-8">
         <Link href="/">
-          <Button variant="ghost" className="mb-8">
+          <Button variant="ghost" className="fixed top-24 left-4 z-50 bg-white shadow-md hover:bg-gray-100">
             <ArrowLeft className="mr-2 h-4 w-4" />
             Back to Home
           </Button>
