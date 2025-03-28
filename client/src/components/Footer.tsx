@@ -1,14 +1,13 @@
 import { useTranslation } from "react-i18next";
 import { Link } from "wouter";
-import { Input } from "@/components/ui/input";
-import { Button } from "@/components/ui/button";
+import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select";
 import { 
   FaInstagram, 
   FaFacebook, 
   FaYoutube 
 } from "react-icons/fa";
 import { SiX } from "react-icons/si";
-import { ChevronRight, Mail, MapPin, Phone } from "lucide-react";
+import { Mail, MapPin, Phone, Globe } from "lucide-react";
 
 // Creating a shared social media links configuration
 export const socialMediaLinks = [
@@ -18,8 +17,22 @@ export const socialMediaLinks = [
   { icon: FaYoutube, href: "https://youtube.com/PocketComputeOfficial", ariaLabel: "YouTube" }
 ];
 
+// Language options with flags (Unicode characters used for flags)
+export const languages = [
+  { code: "en", name: "English", flag: "🇺🇸" },
+  { code: "es", name: "Español", flag: "🇪🇸" },
+  { code: "fr", name: "Français", flag: "🇫🇷" },
+  { code: "de", name: "Deutsch", flag: "🇩🇪" },
+  { code: "ja", name: "日本語", flag: "🇯🇵" },
+];
+
 const Footer = () => {
-  const { t } = useTranslation();
+  const { t, i18n } = useTranslation();
+  
+  // Handle language change
+  const handleLanguageChange = (value: string) => {
+    i18n.changeLanguage(value);
+  };
 
   return (
     <footer className="bg-gray-900 text-white pt-16 pb-8">
@@ -94,18 +107,35 @@ const Footer = () => {
           </div>
           
           <div>
-            <h3 className="text-lg font-bold mb-4">{t('footer.newsletter.title')}</h3>
-            <p className="text-gray-400 mb-4">{t('footer.newsletter.subtitle')}</p>
-            <form className="flex">
-              <Input 
-                type="email" 
-                placeholder={t('footer.newsletter.placeholder')} 
-                className="rounded-r-none bg-gray-800 border-gray-700 text-white focus:ring-primary"
-              />
-              <Button type="submit" className="rounded-l-none px-4">
-                <ChevronRight className="h-5 w-5" />
-              </Button>
-            </form>
+            <h3 className="text-lg font-bold mb-4">{t('footer.language.title') || 'Language'}</h3>
+            <p className="text-gray-400 mb-4">{t('footer.language.subtitle') || 'Select your preferred language'}</p>
+            <div className="flex items-center">
+              <Globe className="h-5 w-5 text-gray-400 mr-3" />
+              <Select value={i18n.language} onValueChange={handleLanguageChange}>
+                <SelectTrigger className="bg-gray-800 border-gray-700 text-white w-full">
+                  <SelectValue placeholder={
+                    <div className="flex items-center gap-2">
+                      <span className="text-base">
+                        {languages.find(lang => lang.code === i18n.language)?.flag}
+                      </span>
+                      <span>
+                        {languages.find(lang => lang.code === i18n.language)?.name}
+                      </span>
+                    </div>
+                  } />
+                </SelectTrigger>
+                <SelectContent>
+                  {languages.map((lang) => (
+                    <SelectItem key={lang.code} value={lang.code} className="bg-gray-800 text-white hover:bg-gray-700">
+                      <span className="flex items-center gap-2">
+                        <span className="text-base">{lang.flag}</span>
+                        <span>{lang.name}</span>
+                      </span>
+                    </SelectItem>
+                  ))}
+                </SelectContent>
+              </Select>
+            </div>
           </div>
         </div>
         

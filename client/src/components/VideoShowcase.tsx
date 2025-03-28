@@ -87,9 +87,7 @@ const VideoShowcase = () => {
           </div>
         </m.div>
         
-        <div className="mt-8 text-center text-sm text-neutral italic">
-          <p>{t('videoShowcase.scrollInstruction')}</p>
-        </div>
+
       </div>
     </section>
   );

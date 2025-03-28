@@ -189,10 +189,9 @@
     "contact": {
       "title": "Contacto"
     },
-    "newsletter": {
-      "title": "Boletín",
-      "subtitle": "Suscríbete para recibir las últimas actualizaciones.",
-      "placeholder": "Tu correo electrónico"
+    "language": {
+      "title": "Idioma",
+      "subtitle": "Selecciona tu idioma preferido"
     },
     "legal": {
       "privacy": "Política de Privacidad",

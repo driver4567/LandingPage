@@ -2,22 +2,12 @@ import { useState, useEffect } from "react";
 import { useTranslation } from "react-i18next";
 import { Link } from "wouter";
 import { Button } from "@/components/ui/button";
-import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select";
 import { Menu, X } from "lucide-react";
 
 const Navbar = () => {
-  const { t, i18n } = useTranslation();
+  const { t } = useTranslation();
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
   const [isScrolled, setIsScrolled] = useState(false);
-
-  // Language options with flags (Unicode characters used for flags)
-  const languages = [
-    { code: "en", name: "English", flag: "🇺🇸" },
-    { code: "es", name: "Español", flag: "🇪🇸" },
-    { code: "fr", name: "Français", flag: "🇫🇷" },
-    { code: "de", name: "Deutsch", flag: "🇩🇪" },
-    { code: "ja", name: "日本語", flag: "🇯🇵" },
-  ];
 
   // Handle scroll event to change navbar appearance
   useEffect(() => {
@@ -28,11 +18,6 @@ const Navbar = () => {
     window.addEventListener('scroll', handleScroll);
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
-
-  // Handle language change
-  const handleLanguageChange = (value: string) => {
-    i18n.changeLanguage(value);
-  };
 
   // Function to handle smooth scrolling to sections
   const scrollToSection = (sectionId: string) => {
@@ -91,32 +76,6 @@ const Navbar = () => {
           </div>
 
           <div className="flex items-center space-x-4">
-            {/* Language Selector */}
-            <Select value={i18n.language} onValueChange={handleLanguageChange}>
-              <SelectTrigger className="w-[180px]">
-                <SelectValue placeholder={
-                  <div className="flex items-center gap-2">
-                    <span className="text-base">
-                      {languages.find(lang => lang.code === i18n.language)?.flag}
-                    </span>
-                    <span>
-                      {languages.find(lang => lang.code === i18n.language)?.name}
-                    </span>
-                  </div>
-                } />
-              </SelectTrigger>
-              <SelectContent>
-                {languages.map((lang) => (
-                  <SelectItem key={lang.code} value={lang.code}>
-                    <span className="flex items-center gap-2">
-                      <span className="text-base">{lang.flag}</span>
-                      <span>{lang.name}</span>
-                    </span>
-                  </SelectItem>
-                ))}
-              </SelectContent>
-            </Select>
-
             {/* Mobile Menu Button */}
             <Button 
               variant="ghost" 

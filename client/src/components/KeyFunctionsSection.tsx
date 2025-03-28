@@ -21,16 +21,16 @@ const FunctionCard = ({ image, title, description, features, index }: FunctionCa
   return (
     <m.div
       ref={ref}
-      initial={{ opacity: 0, scale: 0.9 }}
-      animate={inView ? { opacity: 1, scale: 1 } : { opacity: 0, scale: 0.9 }}
+      initial={{ opacity: 0, scale: 0.95 }}
+      animate={inView ? { opacity: 1, scale: 1 } : { opacity: 0, scale: 0.95 }}
       transition={{ 
         duration: 0.6, 
         delay: index * 0.2,
         ease: "easeOut" 
       }}
-      className="bg-white rounded-2xl shadow-md overflow-hidden"
+      className="bg-white rounded-2xl shadow-md overflow-hidden flex flex-col md:flex-row"
     >
-      <div className="h-48 overflow-hidden relative">
+      <div className="md:w-1/2 h-64 md:h-auto overflow-hidden relative">
         <img 
           src={image} 
           alt={title} 
@@ -38,14 +38,14 @@ const FunctionCard = ({ image, title, description, features, index }: FunctionCa
         />
         <div className="absolute inset-0 bg-primary/10"></div>
       </div>
-      <div className="p-6">
-        <h3 className="text-xl font-bold mb-3">{title}</h3>
-        <p className="text-neutral mb-4">{description}</p>
-        <ul className="space-y-2">
+      <div className="md:w-1/2 p-8">
+        <h3 className="text-2xl font-bold mb-4">{title}</h3>
+        <p className="text-neutral mb-6 text-lg">{description}</p>
+        <ul className="space-y-3">
           {features.map((feature, i) => (
             <li key={i} className="flex items-start">
-              <Check className="h-5 w-5 text-primary mr-2 mt-0.5" />
-              <span>{feature}</span>
+              <Check className="h-6 w-6 text-primary mr-3 mt-0.5" />
+              <span className="text-lg">{feature}</span>
             </li>
           ))}
         </ul>
@@ -107,25 +107,27 @@ const KeyFunctionsSection = () => {
           initial={{ opacity: 0, y: 20 }}
           animate={headerInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 20 }}
           transition={{ duration: 0.6, ease: "easeOut" }}
-          className="text-center max-w-3xl mx-auto mb-16"
+          className="text-center max-w-4xl mx-auto mb-16"
         >
-          <h2 className="text-3xl md:text-4xl font-bold mb-6">{t('functions.title')}</h2>
-          <p className="text-lg text-neutral">{t('functions.subtitle')}</p>
+          <h2 className="text-4xl md:text-5xl font-bold mb-6">{t('functions.title')}</h2>
+          <p className="text-xl text-neutral">{t('functions.subtitle')}</p>
         </m.div>
+      </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 md:gap-6 lg:gap-12">
-          {functions.map((func, index) => (
-            <FunctionCard
-              key={index}
-              image={func.image}
-              title={t(func.titleKey)}
-              description={t(func.descriptionKey)}
-              features={func.featuresKeys.map(key => t(key))}
-              index={index}
-            />
-          ))}
-        </div>
+      <div className="max-w-7xl mx-auto space-y-16">
+        {functions.map((func, index) => (
+          <FunctionCard
+            key={index}
+            image={func.image}
+            title={t(func.titleKey)}
+            description={t(func.descriptionKey)}
+            features={func.featuresKeys.map(key => t(key))}
+            index={index}
+          />
+        ))}
+      </div>
 
+      <div className="container mx-auto px-4 md:px-6 lg:px-8">
         <m.div 
           ref={buttonRef}
           initial={{ opacity: 0, y: 20 }}
@@ -135,9 +137,9 @@ const KeyFunctionsSection = () => {
             delay: 0.4,
             ease: "easeOut" 
           }}
-          className="mt-16 text-center"
+          className="mt-20 text-center"
         >
-          <Button size="lg" className="inline-flex items-center gap-2" asChild>
+          <Button size="lg" className="inline-flex items-center gap-2 text-lg px-8 py-6" asChild>
             <a href="#kickstarter">
               {t('functions.preorderButton')}
               <ChevronRight className="h-5 w-5" />

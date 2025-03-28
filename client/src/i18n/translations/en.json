@@ -80,8 +80,7 @@
   "videoShowcase": {
     "title": "See PocketCompute in Action",
     "subtitle": "Watch how PocketCompute transforms the way you interact with technology.",
-    "playButton": "Play video",
-    "scrollInstruction": "Scroll down to see how PocketCompute adapts to your needs"
+    "playButton": "Play video"
   },
   "instagram": {
     "title": "From Our Instagram",
@@ -102,16 +101,13 @@
     },
     "validation": {
       "nameRequired": "Please enter your name",
-      "emailInvalid": "Please enter a valid email address",
-      "privacyRequired": "You must agree to receive updates"
+      "emailInvalid": "Please enter a valid email address"
     },
     "form": {
       "name": "Name",
       "namePlaceholder": "Enter your name",
       "email": "Email",
       "emailPlaceholder": "Enter your email",
-      "privacyLabel": "I agree to receive updates from PocketCompute",
-      "privacyText": "We respect your privacy and will never share your information.",
       "submit": "Subscribe Now",
       "submitting": "Subscribing..."
     }
@@ -189,10 +185,9 @@
     "contact": {
       "title": "Contact"
     },
-    "newsletter": {
-      "title": "Newsletter",
-      "subtitle": "Subscribe to get the latest updates.",
-      "placeholder": "Your email"
+    "language": {
+      "title": "Language",
+      "subtitle": "Select your preferred language"
     },
     "legal": {
       "privacy": "Privacy Policy",

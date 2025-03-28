@@ -9,7 +9,7 @@ import jaTranslations from './translations/ja.json';
 import esTranslations from './translations/es.json';
 
 export const languages = [
-  { code: 'en', name: 'English', flag: '🇬🇧' },
+  { code: 'en', name: 'English', flag: '🇺🇸' },
   { code: 'de', name: 'Deutsch', flag: '🇩🇪' },
   { code: 'fr', name: 'Français', flag: '🇫🇷' },
   { code: 'ja', name: '日本語', flag: '🇯🇵' },

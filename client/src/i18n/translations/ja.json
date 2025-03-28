@@ -189,10 +189,9 @@
     "contact": {
       "title": "お問い合わせ"
     },
-    "newsletter": {
-      "title": "ニュースレター",
-      "subtitle": "最新情報を受け取るにはご登録ください。",
-      "placeholder": "メールアドレス"
+    "language": {
+      "title": "言語",
+      "subtitle": "言語を選択してください"
     },
     "legal": {
       "privacy": "プライバシーポリシー",

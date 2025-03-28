@@ -1,4 +1,3 @@
-import { useState } from "react";
 import { useTranslation } from "react-i18next";
 import { m } from "framer-motion";
 import { useInView } from "react-intersection-observer";
@@ -7,8 +6,6 @@ import { useToast } from "@/hooks/use-toast";
 import { apiRequest } from "@/lib/queryClient";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
-import { Checkbox } from "@/components/ui/checkbox";
-import { Label } from "@/components/ui/label";
 import { z } from "zod";
 import { useForm } from "react-hook-form";
 import { zodResolver } from "@hookform/resolvers/zod";
@@ -31,9 +28,6 @@ const NewsletterSignup = () => {
     email: z.string().email({
       message: t('newsletter.validation.emailInvalid'),
     }),
-    privacy: z.boolean().refine(val => val === true, {
-      message: t('newsletter.validation.privacyRequired'),
-    }),
   });
 
   // Form definition
@@ -42,7 +36,6 @@ const NewsletterSignup = () => {
     defaultValues: {
       name: "",
       email: "",
-      privacy: false,
     },
   });
 
@@ -131,31 +124,7 @@ const NewsletterSignup = () => {
                   )}
                 />
               </div>
-              
-              <FormField
-                control={form.control}
-                name="privacy"
-                render={({ field }) => (
-                  <FormItem className="flex items-start space-x-3 space-y-0">
-                    <FormControl>
-                      <Checkbox
-                        checked={field.value}
-                        onCheckedChange={field.onChange}
-                        disabled={mutation.isPending}
-                      />
-                    </FormControl>
-                    <div className="space-y-1 leading-none">
-                      <FormLabel>
-                        {t('newsletter.form.privacyLabel')}
-                      </FormLabel>
-                      <p className="text-sm text-gray-500">
-                        {t('newsletter.form.privacyText')}
-                      </p>
-                    </div>
-                    <FormMessage />
-                  </FormItem>
-                )}
-              />
+
               
               <div className="text-center pt-2">
                 <Button 
