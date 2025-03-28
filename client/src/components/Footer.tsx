@@ -7,7 +7,7 @@ import {
   FaYoutube 
 } from "react-icons/fa";
 import { SiX } from "react-icons/si";
-import { Mail, MapPin, Phone, Globe } from "lucide-react";
+import { Mail, Globe } from "lucide-react";
 
 // Creating a shared social media links configuration
 export const socialMediaLinks = [
@@ -80,11 +80,7 @@ const Footer = () => {
                   {t('footer.quickLinks.faq')}
                 </a>
               </li>
-              <li>
-                <a href="#kickstarter" className="text-gray-400 hover:text-white transition-colors duration-300">
-                  {t('footer.quickLinks.kickstarter')}
-                </a>
-              </li>
+
             </ul>
           </div>
           
@@ -95,6 +91,7 @@ const Footer = () => {
                 <Mail className="h-5 w-5 text-gray-400 mr-2 mt-0.5" />
                 <span className="text-gray-400">contact@pocketcompute.tech</span>
               </li>
+              {/* Address and phone hidden as requested
               <li className="flex items-start">
                 <MapPin className="h-5 w-5 text-gray-400 mr-2 mt-0.5" />
                 <span className="text-gray-400">123 Innovation Drive, Tech City, CA 94043</span>
@@ -103,6 +100,7 @@ const Footer = () => {
                 <Phone className="h-5 w-5 text-gray-400 mr-2 mt-0.5" />
                 <span className="text-gray-400">+1 (555) 123-4567</span>
               </li>
+              */}
             </ul>
           </div>
           

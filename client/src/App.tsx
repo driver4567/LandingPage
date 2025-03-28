@@ -13,7 +13,7 @@ import InstagramFeed from "./components/InstagramFeed";
 import NewsletterSignup from "./components/NewsletterSignup";
 import AboutSection from "./components/AboutSection";
 import FAQSection from "./components/FAQSection";
-import KickstarterCTA from "./components/KickstarterCTA";
+
 import Footer from "./components/Footer";
 import NotFound from "@/pages/not-found";
 import PrivacyPolicy from "@/pages/PrivacyPolicy";
@@ -43,7 +43,6 @@ function HomePage() {
         <NewsletterSignup />
         <AboutSection />
         <FAQSection />
-        <KickstarterCTA />
       </main>
       <Footer />
     </>

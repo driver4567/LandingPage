@@ -48,39 +48,39 @@ const Navbar = () => {
             </Link>
           </div>
 
-          <div className="hidden md:flex items-center space-x-8">
-            <button 
-              onClick={() => scrollToSection('features')} 
-              className="text-neutral hover:text-primary transition duration-200"
-            >
-              {t('navbar.features')}
-            </button>
-            <button 
-              onClick={() => scrollToSection('functions')} 
-              className="text-neutral hover:text-primary transition duration-200"
-            >
-              {t('navbar.keyFunctions')}
-            </button>
-            <button 
-              onClick={() => scrollToSection('about')} 
-              className="text-neutral hover:text-primary transition duration-200"
-            >
-              {t('navbar.about')}
-            </button>
-            <button 
-              onClick={() => scrollToSection('faq')} 
-              className="text-neutral hover:text-primary transition duration-200"
-            >
-              {t('navbar.faq')}
-            </button>
-          </div>
+          <div className="flex items-center">
+            <div className="hidden md:flex items-center space-x-8 justify-end">
+              <button 
+                onClick={() => scrollToSection('features')} 
+                className="text-neutral hover:text-primary transition duration-200"
+              >
+                {t('navbar.features')}
+              </button>
+              <button 
+                onClick={() => scrollToSection('functions')} 
+                className="text-neutral hover:text-primary transition duration-200"
+              >
+                {t('navbar.keyFunctions')}
+              </button>
+              <button 
+                onClick={() => scrollToSection('about')} 
+                className="text-neutral hover:text-primary transition duration-200"
+              >
+                {t('navbar.about')}
+              </button>
+              <button 
+                onClick={() => scrollToSection('faq')} 
+                className="text-neutral hover:text-primary transition duration-200"
+              >
+                {t('navbar.faq')}
+              </button>
+            </div>
 
-          <div className="flex items-center space-x-4">
             {/* Mobile Menu Button */}
             <Button 
               variant="ghost" 
               size="icon" 
-              className="md:hidden" 
+              className="md:hidden ml-4" 
               onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
             >
               {isMobileMenuOpen ? <X /> : <Menu />}

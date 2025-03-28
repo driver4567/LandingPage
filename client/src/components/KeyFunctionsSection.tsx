@@ -18,6 +18,8 @@ const FunctionCard = ({ image, title, description, features, index }: FunctionCa
     threshold: 0.1,
   });
 
+  const isEven = index % 2 === 0;
+  
   return (
     <m.div
       ref={ref}
@@ -28,9 +30,9 @@ const FunctionCard = ({ image, title, description, features, index }: FunctionCa
         delay: index * 0.2,
         ease: "easeOut" 
       }}
-      className="bg-white rounded-2xl shadow-md overflow-hidden flex flex-col md:flex-row"
+      className={`bg-white rounded-2xl shadow-md overflow-hidden flex flex-col ${isEven ? 'md:flex-row' : 'md:flex-row-reverse'}`}
     >
-      <div className="md:w-1/2 h-64 md:h-auto overflow-hidden relative">
+      <div className="md:w-2/3 h-64 md:h-auto overflow-hidden relative">
         <img 
           src={image} 
           alt={title} 
@@ -38,13 +40,13 @@ const FunctionCard = ({ image, title, description, features, index }: FunctionCa
         />
         <div className="absolute inset-0 bg-primary/10"></div>
       </div>
-      <div className="md:w-1/2 p-8">
+      <div className="md:w-1/3 p-8 flex flex-col justify-center">
         <h3 className="text-2xl font-bold mb-4">{title}</h3>
         <p className="text-neutral mb-6 text-lg">{description}</p>
         <ul className="space-y-3">
           {features.map((feature, i) => (
             <li key={i} className="flex items-start">
-              <Check className="h-6 w-6 text-primary mr-3 mt-0.5" />
+              <Check className="h-6 w-6 text-primary mr-3 mt-0.5 flex-shrink-0" />
               <span className="text-lg">{feature}</span>
             </li>
           ))}
@@ -57,11 +59,6 @@ const FunctionCard = ({ image, title, description, features, index }: FunctionCa
 const KeyFunctionsSection = () => {
   const { t } = useTranslation();
   const [headerRef, headerInView] = useInView({
-    triggerOnce: true,
-    threshold: 0.1,
-  });
-  
-  const [buttonRef, buttonInView] = useInView({
     triggerOnce: true,
     threshold: 0.1,
   });
@@ -114,7 +111,7 @@ const KeyFunctionsSection = () => {
         </m.div>
       </div>
 
-      <div className="max-w-7xl mx-auto space-y-16">
+      <div className="container mx-auto px-4 md:px-6 lg:px-8 space-y-16">
         {functions.map((func, index) => (
           <FunctionCard
             key={index}
@@ -127,26 +124,7 @@ const KeyFunctionsSection = () => {
         ))}
       </div>
 
-      <div className="container mx-auto px-4 md:px-6 lg:px-8">
-        <m.div 
-          ref={buttonRef}
-          initial={{ opacity: 0, y: 20 }}
-          animate={buttonInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 20 }}
-          transition={{ 
-            duration: 0.6, 
-            delay: 0.4,
-            ease: "easeOut" 
-          }}
-          className="mt-20 text-center"
-        >
-          <Button size="lg" className="inline-flex items-center gap-2 text-lg px-8 py-6" asChild>
-            <a href="#kickstarter">
-              {t('functions.preorderButton')}
-              <ChevronRight className="h-5 w-5" />
-            </a>
-          </Button>
-        </m.div>
-      </div>
+
     </section>
   );
 };
