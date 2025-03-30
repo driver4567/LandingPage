@@ -194,5 +194,12 @@
       "terms": "Terms of Service",
       "cookies": "Cookie Policy"
     }
+  },
+  "languageRecommendation": {
+    "title": "Language Recommendation",
+    "detected": "We detected your browser language is {{language}}",
+    "question": "Would you like to switch to {{language}}?",
+    "switchButton": "Switch to {{language}}",
+    "dismiss": "No, thanks"
   }
 }

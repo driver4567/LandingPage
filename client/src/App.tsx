@@ -13,6 +13,7 @@ import InstagramFeed from "./components/InstagramFeed";
 import NewsletterSignup from "./components/NewsletterSignup";
 import AboutSection from "./components/AboutSection";
 import FAQSection from "./components/FAQSection";
+import LanguageRecommendation from "./components/LanguageRecommendation";
 
 import Footer from "./components/Footer";
 import NotFound from "@/pages/not-found";
@@ -65,6 +66,7 @@ function App() {
   return (
     <QueryClientProvider client={queryClient}>
       <Router />
+      <LanguageRecommendation />
       <Toaster />
     </QueryClientProvider>
   );

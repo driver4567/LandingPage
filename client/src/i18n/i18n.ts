@@ -16,6 +16,9 @@ export const languages = [
   { code: 'es', name: 'Español', flag: '🇪🇸' }
 ];
 
+// Supported languages in our app
+const supportedLngs = languages.map(lang => lang.code);
+
 i18n
   .use(LanguageDetector)
   .use(initReactI18next)
@@ -28,9 +31,24 @@ i18n
       es: { translation: esTranslations }
     },
     fallbackLng: 'en',
+    supportedLngs,
+    nonExplicitSupportedLngs: true, // Will detect language variants (e.g., en-US will use en)
     detection: {
-      order: ['navigator', 'localStorage'],
-      caches: ['localStorage']
+      order: ['querystring', 'navigator', 'htmlTag', 'localStorage', 'path', 'subdomain'],
+      lookupQuerystring: 'lng',
+      lookupLocalStorage: 'i18nextLng',
+      caches: ['localStorage'],
+      // Convert language codes from navigator (which might be like 'en-US')
+      // to our supported codes (like 'en')
+      convertDetectedLanguage: (lng) => {
+        // Handle specific language variants
+        if (lng.startsWith('en-')) return 'en';
+        if (lng.startsWith('de-')) return 'de';
+        if (lng.startsWith('fr-')) return 'fr';
+        if (lng.startsWith('ja-')) return 'ja';
+        if (lng.startsWith('es-')) return 'es';
+        return lng;
+      }
     },
     interpolation: {
       escapeValue: false
