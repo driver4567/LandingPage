@@ -42,6 +42,18 @@ const HeroSection = () => {
       }
     }
   };
+  
+  // Function to handle smooth scrolling to sections
+  const scrollToSection = (sectionId: string) => {
+    const section = document.getElementById(sectionId);
+    if (section) {
+      // Scroll to section with smooth behavior
+      section.scrollIntoView({ 
+        behavior: 'smooth',
+        block: 'start'
+      });
+    }
+  };
 
   return (
     <section id="hero" className="relative pt-24 pb-20 md:pt-32 md:pb-32 lg:pt-40 lg:pb-40 overflow-hidden">
@@ -61,17 +73,22 @@ const HeroSection = () => {
               {t('hero.subtitle')}
             </p>
             <div className="flex flex-col sm:flex-row space-y-4 sm:space-y-0 sm:space-x-4">
-              <Button size="lg" className="inline-flex items-center justify-center gap-2" asChild>
-                <a href="#kickstarter">
-                  {t('hero.kickstarterButton')}
-                  <ChevronRight className="h-5 w-5" />
-                </a>
+              <Button 
+                size="lg" 
+                className="inline-flex items-center justify-center gap-2"
+                onClick={() => scrollToSection('kickstarter')}
+              >
+                {t('hero.kickstarterButton')}
+                <ChevronRight className="h-5 w-5" />
               </Button>
-              <Button size="lg" variant="outline" className="inline-flex items-center justify-center gap-2" asChild>
-                <a href="#functions">
-                  {t('hero.learnMoreButton')}
-                  <ChevronRight className="h-5 w-5" />
-                </a>
+              <Button 
+                size="lg" 
+                variant="outline" 
+                className="inline-flex items-center justify-center gap-2"
+                onClick={() => scrollToSection('functions')}
+              >
+                {t('hero.learnMoreButton')}
+                <ChevronRight className="h-5 w-5" />
               </Button>
             </div>
           </m.div>
