@@ -71,13 +71,13 @@ const NewsletterSignup = () => {
 
   return (
     <section id="newsletter" className="py-20 md:py-28 bg-white">
-      <div className="container mx-auto px-4 md:px-6 lg:px-8">
+      <div className="container mx-auto px-4 md:px-6 lg:px-8 xl:px-16">
         <m.div
           ref={ref}
           initial={{ opacity: 0, y: 20 }}
           animate={inView ? { opacity: 1, y: 0 } : { opacity: 0, y: 20 }}
           transition={{ duration: 0.6, ease: "easeOut" }}
-          className="max-w-3xl mx-auto bg-primary/5 rounded-2xl p-8 md:p-12"
+          className="max-w-xl lg:max-w-2xl mx-auto bg-primary/5 rounded-2xl p-8 md:p-12"
         >
           <div className="text-center mb-8">
             <h2 className="text-3xl font-bold mb-4">{t('newsletter.title')}</h2>
@@ -86,7 +86,7 @@ const NewsletterSignup = () => {
 
           <Form {...form}>
             <form onSubmit={form.handleSubmit(onSubmit)} className="space-y-4">
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+              <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-1 gap-4">
                 <FormField
                   control={form.control}
                   name="name"

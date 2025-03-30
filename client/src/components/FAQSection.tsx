@@ -63,7 +63,7 @@ const FAQSection = () => {
 
   return (
     <section id="faq" className="py-20 md:py-28 bg-white">
-      <div className="container mx-auto px-4 md:px-6 lg:px-8">
+      <div className="container mx-auto px-4 md:px-6 lg:px-8 xl:px-16">
         <m.div 
           ref={headerRef}
           initial={{ opacity: 0, y: 20 }}

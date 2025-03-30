@@ -98,7 +98,7 @@ const KeyFunctionsSection = () => {
 
   return (
     <section id="functions" className="py-20 md:py-28 bg-gray-50">
-      <div className="container mx-auto px-4 md:px-6 lg:px-8">
+      <div className="container mx-auto px-4 md:px-6 lg:px-8 xl:px-16">
         <m.div 
           ref={headerRef}
           initial={{ opacity: 0, y: 20 }}
@@ -111,7 +111,7 @@ const KeyFunctionsSection = () => {
         </m.div>
       </div>
 
-      <div className="container mx-auto px-4 md:px-6 lg:px-8 space-y-16">
+      <div className="container mx-auto px-4 md:px-6 lg:px-8 xl:px-16 space-y-16">
         {functions.map((func, index) => (
           <FunctionCard
             key={index}
