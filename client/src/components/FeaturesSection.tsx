@@ -26,12 +26,14 @@ const Feature = ({ icon, title, description, index }: FeatureProps) => {
   return (
     <m.div
       ref={ref}
-      initial={{ opacity: 0, y: 30 }}
-      animate={inView ? { opacity: 1, y: 0 } : { opacity: 0, y: 30 }}
+      initial={{ opacity: 0, y: 20 }}
+      animate={inView ? { opacity: 1, y: 0 } : { opacity: 0, y: 20 }}
       transition={{ 
-        duration: 0.6, 
+        duration: 0.5, 
         delay: index * 0.1,
-        ease: "easeOut" 
+        ease: [0.25, 0.1, 0.25, 1], // Cubic bezier curve for smoother motion
+        opacity: { duration: 0.5 },
+        y: { duration: 0.5, ease: [0.25, 0.1, 0.25, 1] }
       }}
       className="bg-gray-50 rounded-xl p-6 shadow-sm hover:shadow-md transition duration-300 transform hover:-translate-y-1"
     >
@@ -91,7 +93,12 @@ const FeaturesSection = () => {
           ref={headerRef}
           initial={{ opacity: 0, y: 20 }}
           animate={headerInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 20 }}
-          transition={{ duration: 0.6, ease: "easeOut" }}
+          transition={{ 
+            duration: 0.5, 
+            ease: [0.25, 0.1, 0.25, 1],
+            opacity: { duration: 0.5 },
+            y: { duration: 0.5, ease: [0.25, 0.1, 0.25, 1] }
+          }}
           className="text-center max-w-3xl mx-auto mb-16"
         >
           <h2 className="text-3xl md:text-4xl font-bold mb-6">{t('features.title')}</h2>

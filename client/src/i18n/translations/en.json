@@ -7,7 +7,12 @@
     "keyFunctions": "Key Functions",
     "about": "About",
     "faq": "FAQ",
-    "language": "Language"
+    "language": "Language",
+    "languageSelector": "Select language",
+    "selectLanguage": "Select your language",
+    "switchTo": "Switch to",
+    "openMenu": "Open menu",
+    "closeMenu": "Close menu"
   },
   "hero": {
     "title": "The Future of Smart Devices",
@@ -80,7 +85,15 @@
   "videoShowcase": {
     "title": "See PocketCompute in Action",
     "subtitle": "Watch how PocketCompute transforms the way you interact with technology.",
-    "playButton": "Play video"
+    "playButton": "Play video",
+    "comingSoon": {
+      "title": "Video Coming Soon",
+      "message": "We're currently working on an exciting product demonstration video that will showcase all the amazing features of PocketCompute.",
+      "releaseInfo": "Full product video will be released in:",
+      "year": "Year",
+      "quarter": "Quarter",
+      "close": "Close"
+    }
   },
   "instagram": {
     "title": "From Our Instagram",

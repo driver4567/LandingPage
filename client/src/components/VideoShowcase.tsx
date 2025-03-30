@@ -2,14 +2,23 @@ import { useRef, useEffect, useState } from "react";
 import { useTranslation } from "react-i18next";
 import { m } from "framer-motion";
 import { useInView } from "react-intersection-observer";
-import { Play } from "lucide-react";
+import { Play, X } from "lucide-react";
 import { useVideoScrubbing } from "../utils/videoScrubbing";
+import {
+  Dialog,
+  DialogContent,
+  DialogDescription,
+  DialogHeader,
+  DialogTitle,
+  DialogClose
+} from "@/components/ui/dialog";
 
 const VideoShowcase = () => {
   const { t } = useTranslation();
   const videoRef = useRef<HTMLVideoElement>(null);
   const containerRef = useRef<HTMLDivElement>(null);
   const [isPlaying, setIsPlaying] = useState(false);
+  const [isDialogOpen, setIsDialogOpen] = useState(false);
   
   const [headerRef, headerInView] = useInView({
     triggerOnce: true,
@@ -31,15 +40,9 @@ const VideoShowcase = () => {
     }
   }, [setupVideoScrubbing]);
 
+  // Show the coming soon dialog when play is clicked
   const handlePlayClick = () => {
-    if (videoRef.current) {
-      if (isPlaying) {
-        videoRef.current.pause();
-      } else {
-        videoRef.current.play();
-      }
-      setIsPlaying(!isPlaying);
-    }
+    setIsDialogOpen(true);
   };
 
   return (
@@ -89,6 +92,40 @@ const VideoShowcase = () => {
         
 
       </div>
+      
+      {/* Coming Soon Dialog */}
+      <Dialog open={isDialogOpen} onOpenChange={setIsDialogOpen}>
+        <DialogContent className="sm:max-w-md">
+          <DialogHeader>
+            <DialogTitle className="text-center text-2xl">
+              {t('videoShowcase.comingSoon.title')}
+            </DialogTitle>
+            <DialogDescription className="text-center">
+              {t('videoShowcase.comingSoon.message')}
+            </DialogDescription>
+          </DialogHeader>
+          <div className="flex flex-col space-y-4 mt-4">
+            <p className="text-center text-sm">
+              {t('videoShowcase.comingSoon.releaseInfo')}
+            </p>
+            <div className="flex justify-center items-center space-x-4">
+              <div className="flex flex-col items-center">
+                <div className="text-2xl font-bold text-primary">2025</div>
+                <div className="text-xs text-muted-foreground">{t('videoShowcase.comingSoon.year')}</div>
+              </div>
+              <div className="h-10 w-px bg-muted"></div>
+              <div className="flex flex-col items-center">
+                <div className="text-2xl font-bold text-primary">Q2</div>
+                <div className="text-xs text-muted-foreground">{t('videoShowcase.comingSoon.quarter')}</div>
+              </div>
+            </div>
+          </div>
+          <DialogClose className="absolute right-4 top-4 rounded-sm opacity-70 ring-offset-background transition-opacity hover:opacity-100 focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 disabled:pointer-events-none data-[state=open]:bg-accent data-[state=open]:text-muted-foreground">
+            <X className="h-4 w-4" />
+            <span className="sr-only">{t('videoShowcase.comingSoon.close')}</span>
+          </DialogClose>
+        </DialogContent>
+      </Dialog>
     </section>
   );
 };
