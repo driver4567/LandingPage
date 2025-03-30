@@ -56,7 +56,7 @@ const HeroSection = () => {
   };
 
   return (
-    <section id="hero" className="relative pt-24 pb-20 md:pt-32 md:pb-32 lg:pt-40 lg:pb-40 overflow-hidden">
+    <section id="hero" className="relative pt-24 pb-32 md:pt-32 md:pb-40 lg:pt-40 lg:pb-56 overflow-hidden">
       <div className="container mx-auto px-4 md:px-6 lg:px-8">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 md:gap-12 items-center">
           <m.div 
@@ -134,7 +134,7 @@ const HeroSection = () => {
         </div>
       </div>
 
-      <div className="absolute bottom-10 left-1/2 transform -translate-x-1/2 flex space-x-6">
+      <div className="absolute bottom-4 left-1/2 transform -translate-x-1/2 flex space-x-6 mt-24">
         {socialMediaLinks.map((social, index) => (
           <a 
             key={index}

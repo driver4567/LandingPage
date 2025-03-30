@@ -66,18 +66,7 @@ const InstagramFeed = () => {
           </div>
         )}
 
-        <div className="mt-10 text-center">
-          <Button variant="outline" className="inline-flex items-center gap-2" asChild>
-            <a 
-              href={instagramLink} 
-              target="_blank" 
-              rel="noopener noreferrer"
-            >
-              {t('instagram.followButton')}
-              <FaInstagram className="h-5 w-5" />
-            </a>
-          </Button>
-        </div>
+
       </div>
     </section>
   );
