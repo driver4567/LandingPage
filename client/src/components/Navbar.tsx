@@ -51,16 +51,16 @@ const Navbar = () => {
           <div className="flex items-center">
             <div className="hidden md:flex items-center space-x-8 justify-end">
               <button 
-                onClick={() => scrollToSection('features')} 
-                className="text-neutral hover:text-primary transition duration-200"
-              >
-                {t('navbar.features')}
-              </button>
-              <button 
                 onClick={() => scrollToSection('functions')} 
                 className="text-neutral hover:text-primary transition duration-200"
               >
                 {t('navbar.keyFunctions')}
+              </button>
+              <button 
+                onClick={() => scrollToSection('features')} 
+                className="text-neutral hover:text-primary transition duration-200"
+              >
+                {t('navbar.features')}
               </button>
               <button 
                 onClick={() => scrollToSection('about')} 
@@ -94,16 +94,16 @@ const Navbar = () => {
         <div className="md:hidden bg-white px-4 py-3 shadow-lg">
           <div className="flex flex-col space-y-3">
             <button 
-              onClick={() => scrollToSection('features')} 
-              className="text-neutral hover:text-primary transition duration-200 py-2 text-left"
-            >
-              {t('navbar.features')}
-            </button>
-            <button 
               onClick={() => scrollToSection('functions')} 
               className="text-neutral hover:text-primary transition duration-200 py-2 text-left"
             >
               {t('navbar.keyFunctions')}
+            </button>
+            <button 
+              onClick={() => scrollToSection('features')} 
+              className="text-neutral hover:text-primary transition duration-200 py-2 text-left"
+            >
+              {t('navbar.features')}
             </button>
             <button 
               onClick={() => scrollToSection('about')} 

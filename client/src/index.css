@@ -11,3 +11,10 @@
     @apply font-sans antialiased bg-background text-foreground;
   }
 }
+
+/* Set max-width for container to ensure proper margins */
+.container {
+  max-width: 1280px;
+  margin-left: auto;
+  margin-right: auto;
+}

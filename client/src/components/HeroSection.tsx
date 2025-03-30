@@ -67,7 +67,12 @@ const HeroSection = () => {
                   <ChevronRight className="h-5 w-5" />
                 </a>
               </Button>
-              {/* Learn More button removed as requested */}
+              <Button size="lg" variant="outline" className="inline-flex items-center justify-center gap-2" asChild>
+                <a href="#functions">
+                  {t('hero.learnMoreButton')}
+                  <ChevronRight className="h-5 w-5" />
+                </a>
+              </Button>
             </div>
           </m.div>
           
